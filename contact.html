@@ -85,8 +85,12 @@
           </div>
         </div>
 
-        <!-- NOTE: Replace action with your form endpoint (e.g., Formspree) before going live. -->
-        <form id="contactForm" action="#" method="POST" class="self-start bg-ivory border-t-4 border-brass p-6 sm:p-10 shadow-lg rounded-br-[3rem]" novalidate>
+        <!-- Delivery is configured in site.js (FORM). -->
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="self-start bg-ivory border-t-4 border-brass p-6 sm:p-10 shadow-lg rounded-br-[3rem]" novalidate>
+          <input type="hidden" name="access_key" value="" />
+          <input type="hidden" name="subject" value="New website inquiry — leeeunsangtax.com" />
+          <input type="hidden" name="from_name" value="leeeunsangtax.com" />
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
           <div class="grid gap-5 sm:grid-cols-2">
             <div>
               <label for="name" class="block text-sm font-semibold text-navy"><span data-i18n="f_name">Full Name</span> <span class="text-brass">*</span></label>
@@ -120,7 +124,8 @@
             </div>
           </div>
           <p id="formError" class="hidden mt-4 text-sm font-medium text-red-700" data-i18n="f_error" role="alert">Please complete all fields with a valid email.</p>
-          <button type="submit" class="mt-7 w-full inline-flex items-center justify-center gap-2 bg-navy px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white hover:bg-navy-light transition">
+          <p id="formSendError" class="hidden mt-4 text-sm font-medium text-red-700" role="alert"><span data-i18n="f_send_error">Sorry, your message could not be sent. Please email us directly at</span> <a href="mailto:eunsang@leeeunsangtax.com" class="underline">eunsang@leeeunsangtax.com</a></p>
+          <button type="submit" id="formSubmit" class="disabled:opacity-60 mt-7 w-full inline-flex items-center justify-center gap-2 bg-navy px-6 py-4 text-sm font-bold uppercase tracking-[0.12em] text-white hover:bg-navy-light transition">
             <span data-i18n="f_submit">Submit Inquiry</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
           </button>

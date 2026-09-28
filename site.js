@@ -12,6 +12,18 @@ const LINKS = {
   upload: 'contact.html', // TODO: TaxDome portal / upload URL. Until then, goes to the inquiry form.
 };
 
+/* ---------- Contact form delivery (edit here only) ----------
+ * Inquiries go to CONTACT_EMAIL.
+ * WEB3FORMS_KEY: free access key from https://web3forms.com (create it with CONTACT_EMAIL).
+ *   - With a key: the form sends directly; messages arrive in CONTACT_EMAIL.
+ *   - Without a key: the visitor’s email app opens, pre-addressed to CONTACT_EMAIL.
+ * The access key is designed to be public (it only allows sending to that inbox).
+ */
+const FORM = {
+  CONTACT_EMAIL: "eunsang@leeeunsangtax.com",
+  WEB3FORMS_KEY: "", // TODO: paste Web3Forms access key
+};
+
 /* ---------- Tailwind theme ---------- */
 tailwind.config = {
   theme: {
@@ -206,6 +218,7 @@ const KO = {
   f_msg: '문의 내용',
   f_security: '보안을 위해 이 양식에 소셜 시큐리티 번호(SSN)나 은행 계좌 번호 등 민감한 개인 정보를 포함하지 마십시오. 안전한 문서 업로드는 추후 TaxDome 포털을 통해 안내해 드립니다.',
   f_submit: '문의 보내기',
+  f_send_error: "죄송합니다. 문의를 전송하지 못했습니다. 아래 이메일로 직접 보내주세요:",
   f_error: '모든 항목을 입력하고 올바른 이메일 주소를 적어주세요.',
   f_success: '감사합니다! 문의 내용을 검토한 후 빠르게 연락드리겠습니다.',
 
@@ -360,32 +373,56 @@ function initialLanguage() {
 }
 
 /* ---------- Contact form ---------- */
+function mailtoFallback(form) {
+  const d = new FormData(form);
+  const body = [
+    "Name: " + d.get("name"),
+    "Email: " + d.get("email"),
+    "Business Type: " + d.get("business_type"),
+    "",
+    d.get("message"),
+  ].join("\n");
+  const subject = "Website inquiry — " + d.get("name");
+  window.location.href = "mailto:" + FORM.CONTACT_EMAIL +
+    "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+}
+
 function initForm() {
-  const form = document.getElementById('contactForm');
+  const form = document.getElementById("contactForm");
   if (!form) return;
-  const errorEl = document.getElementById('formError');
-  const successEl = document.getElementById('formSuccess');
-  form.addEventListener('submit', async (e) => {
+  const errorEl = document.getElementById("formError");
+  const sendErrorEl = document.getElementById("formSendError");
+  const successEl = document.getElementById("formSuccess");
+  const submitBtn = document.getElementById("formSubmit");
+  form.elements.access_key.value = FORM.WEB3FORMS_KEY;
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    successEl.classList.add('hidden');
+    successEl.classList.add("hidden");
+    sendErrorEl.classList.add("hidden");
     if (!form.checkValidity()) {
-      errorEl.classList.remove('hidden');
+      errorEl.classList.remove("hidden");
       return;
     }
-    errorEl.classList.add('hidden');
-    // Set the form's action to a real endpoint (e.g. Formspree) before launch.
-    const action = form.getAttribute('action');
-    if (action && action !== '#') {
-      try {
-        const res = await fetch(action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-        if (!res.ok) throw new Error('Request failed');
-      } catch (err) {
-        errorEl.classList.remove('hidden');
-        return;
-      }
+    errorEl.classList.add("hidden");
+
+    if (!FORM.WEB3FORMS_KEY) {
+      mailtoFallback(form);
+      return;
     }
-    form.reset();
-    successEl.classList.remove('hidden');
+
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || json.success === false) throw new Error(json.message || "Request failed");
+      form.reset();
+      successEl.classList.remove("hidden");
+    } catch (err) {
+      sendErrorEl.classList.remove("hidden");
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 }
 

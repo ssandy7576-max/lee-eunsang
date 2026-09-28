@@ -1,0 +1,22 @@
+/* LEE EUNSANG TAX — shared styles (Tailwind handles the rest) */
+html[lang="ko"] body { font-family: 'Noto Sans KR', 'Inter', system-ui, sans-serif; word-break: keep-all; }
+[data-i18n] { transition: opacity .16s ease; }
+.i18n-fade [data-i18n] { opacity: 0; }
+
+.lang-btn[aria-pressed="true"] { background: #14233C; color: #fff; }
+
+/* Full-width photo bands with navy overlay */
+.photo-band { background-size: cover; background-position: center; background-color: #14233C; }
+@media (min-width: 1024px) { .photo-band { background-attachment: fixed; } }
+
+/* Header nav underline */
+.nav-link { position: relative; padding: 6px 0; }
+.nav-link::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: #B08D57; transition: width .25s; }
+.nav-link:hover::after, .nav-link.is-active::after { width: 100%; }
+
+/* Small brass rule used under section titles */
+.rule { display: block; width: 56px; height: 2px; background: #B08D57; }
+.rule-center { margin-left: auto; margin-right: auto; }
+
+/* Lining (modern) numerals for the serif headings — e.g. $500K+ */
+.font-serif { font-variant-numeric: lining-nums; }

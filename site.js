@@ -21,7 +21,7 @@ const LINKS = {
  */
 const FORM = {
   CONTACT_EMAIL: "eunsang@leeeunsangtax.com",
-  WEB3FORMS_KEY: "", // TODO: paste Web3Forms access key
+  WEB3FORMS_KEY: "55d35299-9ef6-4517-beac-3b480627ea69", // Web3Forms (eunsang@leeeunsangtax.com)
 };
 
 /* ---------- Tailwind theme ---------- */

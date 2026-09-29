@@ -67,32 +67,52 @@ const KO = {
   ft_menu: '메뉴',
 
   /* ===== HOME ===== */
-  home_box: "전략적 조세 플래닝 & IRS 대리",
-  home_title: "복잡한 세법 규정의 완벽한 준수와 합법적 절세의 극대화",
-  home_sub: "단순한 세금 신고를 넘어섭니다. 과거 세금신고서에 대한 면밀한 검토와 심층 상담을 통해 숨은 절세 기회를 찾아내고, IRS 규정을 철저히 준수하는 최적의 플래닝 전략을 설계합니다. 복잡한 세무 사안을 다뤄 온 풍부한 경험을 바탕으로 부동산 및 증권 거래, 회계방법 변경, 1031 교환, 할부 판매(Installment Sale), 조기 환급(Tentative Refund), 비용 세분화(Cost Segregation) 등 상황에 맞는 합법적 전략을 적용하여 고객의 자산을 안전하게 지킵니다.",
+  /* hero slider */
+  hs1_t: "전략적 택스 플래닝",
+  hs1_s: "모두를 위한 선제적 절세 전략",
+  hs1_d: "효과적인 택스 플래닝은 초고소득층만을 위한 것이 아닙니다. 직장인, 소상공인, 은퇴자 모두에게 꼭 필요합니다. 최근 3개년 세금신고서를 분석하여, IRS 규정을 철저히 준수하는 범위 안에서 세금 효율을 극대화하는 미래지향적 전략을 설계합니다.",
+  hs2_t: "세무 문제 해결 및 IRS 대리",
+  hs2_s: "합리적인 비용의 전담 대리",
+  hs2_d: "세무 통지서를 받으면 큰 스트레스를 느끼게 됩니다. 저희가 합리적인 비용으로 고객의 전담 대리인이 되어 그 불안을 덜어드립니다. 문제의 근본 원인을 분석하고 복잡한 법적 절차를 헤쳐 나가며, 세법의 테두리 안에서 적극적으로 협상하여 분쟁을 해결하고 고객의 권익을 지킵니다.",
+  hs3_t: "회계 및 장부 기장 서비스",
+  hs3_s: "비즈니스 성장을 위한 든든한 지원",
+  hs3_d: "고객의 필요에 맞춘 비즈니스, 회계, 페이롤 서비스를 종합적으로 제공합니다. 일상적인 재무 업무를 맡겨 주시면, 사업 운영과 성장에만 집중할 수 있는 명확한 재무 현황과 시간을 확보하실 수 있습니다.",
+  hs4_t: "종합 세금 신고",
+  hs4_s: "빠르고 안전한 전문 신고",
+  hs4_d: "15년 이상의 전문성을 바탕으로 빠르고 간편하며 안전한 온라인 세금 신고를 제공합니다. 다주 신고, 비영리단체, 복잡한 국제 세무 사안까지 처리하며, 일반 신고를 넘어 조기 환급(Tentative Refund), AMT 계산, 할부 판매(Installment Sale) 등 고난도 사안도 전문적으로 다룹니다.",
   home_cta: '안전하게 서류 업로드하기',
   home_cta2: '업무 분야 보기',
 
-  tile1_t: "미 연방 세무사 (EA)",
-  tile1: "미 재무부로부터 IRS의 모든 행정 단계에서 납세자를 대리할 수 있는 권한을 부여받았습니다.",
-  tile2_t: "다주(Multi-State) 커버리지",
-  tile2: "미국 거의 모든 주의 복잡한 주 세법 준수와 넥서스(Nexus) 문제를 관리합니다.",
-  tile3_t: "MBA 기반 전략",
-  tile3: "비즈니스와 현금 흐름을 아우르는 관점에서 장기적인 자산 보호 전략을 제시합니다.",
-  tile4_t: "안전한 페이퍼리스",
-  tile4: "보안 고객 포털을 통해 온보딩, 서류 교환, 전자서명을 간편하게 진행합니다.",
-  who_eyebrow: '회사 소개',
-  who_title: "포괄적 조세 자문 및 권익 대리",
-  who_text: "LEEEUNSANG TAX LLC는 과거 세금신고서에 대한 면밀한 세법적 분석과 선제적 플래닝을 결합하여, 납세자가 겪는 세금 스트레스를 줄이고 비즈니스 성장에만 집중할 수 있는 환경을 만듭니다.",
-  who_li1: "부동산 투자자, 의료 전문직, 사업체 오너를 위한 맞춤형 세무 구조 설계 (1031 교환, 비용 세분화, 법인 설립)",
-  who_li2: "IRS 및 주 정부 과세 당국을 상대로 한 공식 대리 및 방어 (통지서 해결, 분할납부, 수정 신고)",
-  who_li3: "은행 수준의 암호화가 적용된 TaxDome 고객 포털을 통한 간편한 페이퍼리스 진행",
+  tile1_t: "미 연방 세무사(EA) 전문성",
+  tile1_s: "IRS 무제한 대리 권한",
+  tile1: "미 재무부 공인 자격으로 IRS 모든 단계에서 고객을 대리합니다.",
+  tile2_t: "국제 세무 및 해외 자산 신고",
+  tile2_s: "글로벌 자산 · 국경 간 규정 준수",
+  tile2: "FBAR·FATCA, 해외 소득 공제, 조세조약 적용까지 정확하게 처리합니다.",
+  tile3_t: "MBA 기반 전략 플래닝",
+  tile3_s: "현금 흐름 최적화 · 자산 보호",
+  tile3: "비즈니스 전반을 분석해 현금 흐름을 높이고 장기 자산을 지킵니다.",
+  tile4_t: "기업급 보안 포털",
+  tile4_s: "간편하고 안전한 페이퍼리스",
+  tile4: "암호화 포털로 온보딩, 서류 교환, 전자서명을 어디서나 진행합니다.",
+  tile_cta: "상담 문의하기",
+  who_eyebrow: 'Our Approach',
+  who_title: "지난 신고서를 리뷰하고,\n앞으로의 절세를 설계합니다",
+  who_text: "LEEEUNSANG TAX LLC는 다년간의 플래닝 경험으로, IRS 규정을 준수하면서 합법적인 절세 효과를 누리도록 돕습니다. 지난 신고서를 면밀히 리뷰해 놓친 기회와 위험을 찾고, 지속적인 소통으로 맞춤형 절세 전략을 함께 세웁니다.",
+  who_li1_t: "선제적 절세 플래닝:",
+  who_li1: "Section 179·Bonus Depreciation, Cost Segregation, 부동산 전문가·단기임대 전략, 회계방법 변경, 세액공제를 활용한 맞춤 플래닝",
+  who_li2_t: "합리적 비용의 세금 문제 해결:",
+  who_li2: "OIC(세금 감면 합의), CNC(납부 유예), Levy·급여 압류 해제, 분할납부, 벌금 면제",
+  who_li3_t: "폭넓은 세무신고 경험:",
+  who_li3: "개인(1040), 파트너십(1065), C-Corp(1120), S-Corp(1120-S), 비영리(990, 990-PF), 다주 신고",
+  who_li4_t: "100% 페이퍼리스:",
+  who_li4: "암호화된 TaxDome 포털로 문서 교환과 전자서명을 언제든 처리해 방문이 필요 없습니다",
 
-  res_title: "조세 전문성과 실행력",
-  res1: "년 이상 조세 실무 경력",
-  res2: "다주 세무 신고 역량",
-  res3: "IRS 대리 권한 (EA)",
-  res4: "보안 고객 포털",
+  res_title: "Credentials",
+  res1: "년 조세 플래닝·신고 실무 경력",
+  res2: "연방 세무 대리 자격 (IRS 무제한 대리권) 및 경영학 석사",
+  res3: "1040 · 1065 · 1120-S · 990-PF 신고 및 플래닝",
+  res4: "해외자산 신고(FBAR·FATCA)와 한미 조세조약 관련 플래닝",
 
   pa_title: '업무 분야',
   pa1_t: '고급 세무 플래닝',
@@ -117,25 +137,17 @@ const KO = {
   talk_text: '과거 세금신고서 리뷰 및 상담을 원하시면 문의를 남겨주세요. 모든 업무는 방문 없이 안전한 전용 포털(TaxDome)을 통해 진행됩니다. 상황 검토 후 맞춤 견적 및 포털 초청 링크를 보내드립니다.',
 
   hero_badge: "미 연방 세무사(EA) · 15년 이상 경력",
-  res2_v: "전국",
-  res3_v: "무제한",
-  res4_v: "암호화",
+  res2_v: "EA · MBA",
+  res3_v: "개인 · 법인 · 재단",
+  res4_v: "한미세금",
   cred_band: "자격 · 라이선스 · 협회 회원",
   bdg1_t: "미 연방 세무사",
-  bdg1: "미 재무부 공인 (EA)",
   bdg2_t: "IRS 대리",
-  bdg2: "세무조사 · 징수 · 불복",
-  bdg3: "경영학 석사",
   bdg4_t: "세무 문제 해결",
-  bdg4: "OIC · 분할납부 · 압류 해제",
   bdg5_t: "NAEA 회원",
-  bdg5: "전미 세무사 협회",
   bdg6_t: "GTAX 회원",
-  bdg6: "전문 세무 네트워크",
   bdg7_t: "부동산 라이선스",
-  bdg7: "부동산 절세 전략",
   bdg8_t: "보험 라이선스",
-  bdg8: "생명 및 상해보험",
   grp4_t: "회계 그룹",
   grp4: "세무조사에 대비된 장부 기장, 재무제표, 페이롤.",
   /* ===== ABOUT ===== */
@@ -447,6 +459,80 @@ function initForm() {
   });
 }
 
+/* ---------- Home hero slider ---------- */
+function initHeroSlider() {
+  const root = document.getElementById('heroSlider');
+  if (!root) return;
+  const track = root.querySelector('.hero-slider__track');
+  const slides = [...root.querySelectorAll('.hero-slide')];
+  const dotsWrap = root.querySelector('.hero-slider__dots');
+  const AUTOPLAY_MS = 7000; // 0 turns autoplay off
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let index = 0;
+  let timer = null;
+
+  const dots = slides.map((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'hero-slider__dot border-brass/60';
+    b.setAttribute('aria-label', 'Slide ' + (i + 1));
+    b.addEventListener('click', () => { go(i); restart(); });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+
+  function go(i) {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(' + (-index * 100) + '%)';
+    slides.forEach((s, n) => {
+      const active = n === index;
+      s.setAttribute('aria-hidden', String(!active));
+      s.inert = !active;
+    });
+    dots.forEach((d, n) => {
+      const active = n === index;
+      d.setAttribute('aria-current', String(active));
+      d.classList.toggle('bg-brass', active);
+    });
+  }
+
+  function stop() { clearInterval(timer); timer = null; }
+  function restart() {
+    stop();
+    if (AUTOPLAY_MS && !reduceMotion) timer = setInterval(() => go(index + 1), AUTOPLAY_MS);
+  }
+
+  root.querySelector('.hero-slider__arrow--prev').addEventListener('click', () => { go(index - 1); restart(); });
+  root.querySelector('.hero-slider__arrow--next').addEventListener('click', () => { go(index + 1); restart(); });
+  root.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { go(index - 1); restart(); }
+    if (e.key === 'ArrowRight') { go(index + 1); restart(); }
+  });
+
+  // Pause while the visitor is reading or interacting
+  root.addEventListener('mouseenter', stop);
+  root.addEventListener('mouseleave', restart);
+  root.addEventListener('focusin', stop);
+  root.addEventListener('focusout', restart);
+  document.addEventListener('visibilitychange', () => (document.hidden ? stop() : restart()));
+
+  // Touch swipe
+  let startX = null;
+  let startY = 0;
+  root.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; startY = e.touches[0].clientY; stop(); }, { passive: true });
+  root.addEventListener('touchend', (e) => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) go(index + (dx < 0 ? 1 : -1));
+    startX = null;
+    restart();
+  });
+
+  go(0);
+  restart();
+}
+
 /* ---------- Boot ---------- */
 document.addEventListener('DOMContentLoaded', () => {
   const page = document.body.dataset.page;
@@ -480,4 +566,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initForm();
+  initHeroSlider();
 });

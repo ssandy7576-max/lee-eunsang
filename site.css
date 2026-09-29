@@ -20,3 +20,90 @@ html[lang="ko"] body { font-family: 'Noto Sans KR', 'Inter', system-ui, sans-ser
 
 /* Lining (modern) numerals for the serif headings — e.g. $500K+ */
 .font-serif { font-variant-numeric: lining-nums; }
+
+/* ---------- Home hero slider ----------
+ * Structure, sizing and motion only. Colors come from the theme classes in index.html
+ * (text-brass / text-white / text-slate-200, bg-brass, border-brass).
+ * Adjust the variables below to tune sizes and speed.
+ */
+.hero-slider {
+  --hs-title-size: clamp(1.75rem, 1.1rem + 2.6vw, 3.25rem);
+  --hs-subtitle-size: clamp(1.05rem, 0.9rem + 0.8vw, 1.5rem);
+  --hs-text-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.125rem);
+  --hs-speed: 600ms;
+  --hs-arrow: 48px;
+  position: relative;
+  padding: 0 calc(var(--hs-arrow) + 1.5rem);
+}
+.hero-slider__viewport { overflow: hidden; }
+.hero-slider__track {
+  display: flex;
+  transition: transform var(--hs-speed) cubic-bezier(.22, .61, .36, 1);
+  will-change: transform;
+}
+.hero-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.25rem;
+}
+.hero-slide__title { font-size: var(--hs-title-size); font-weight: 700; line-height: 1.15; max-width: 22ch; }
+.hero-slide__subtitle { margin-top: 1rem; font-size: var(--hs-subtitle-size); font-weight: 700; line-height: 1.35; }
+.hero-slide__text { margin-top: 1.25rem; max-width: 46rem; font-size: var(--hs-text-size); line-height: 1.75; }
+html[lang="ko"] .hero-slide__title { font-family: 'Noto Serif KR', 'Playfair Display', serif; }
+
+.hero-slider__arrow {
+  position: absolute;
+  top: calc(50% - 1.25rem);
+  transform: translateY(-50%);
+  width: var(--hs-arrow);
+  height: var(--hs-arrow);
+  display: grid;
+  place-items: center;
+  border-width: 1px;
+  border-radius: 9999px;
+  transition: background-color .2s, color .2s;
+}
+.hero-slider__arrow svg { width: 22px; height: 22px; }
+.hero-slider__arrow--prev { left: 0; }
+.hero-slider__arrow--next { right: 0; }
+
+.hero-slider__dots { margin-top: 2rem; display: flex; justify-content: center; gap: 0.75rem; }
+.hero-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-width: 1px;
+  border-radius: 9999px;
+  transition: width .3s, background-color .3s;
+}
+.hero-slider__dot[aria-current="true"] { width: 28px; }
+
+/* Mobile: arrows move down beside the dots so the text gets the full width */
+@media (max-width: 767px) {
+  .hero-slider { --hs-arrow: 40px; padding: 0; }
+  .hero-slider__arrow { top: auto; bottom: 0; transform: none; }
+  .hero-slider__arrow--prev { left: calc(50% - 8.5rem); }
+  .hero-slider__arrow--next { right: calc(50% - 8.5rem); }
+  .hero-slider__dots { min-height: var(--hs-arrow); align-items: center; margin-top: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slider__track { transition: none; }
+}
+
+/* ---------- Home info tiles (clickable → Contacts) ---------- */
+.info-tile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.info-tile:hover, .info-tile:focus-visible { transform: translateY(-4px); box-shadow: 0 18px 36px -18px rgba(0, 0, 0, .55); }
+.info-tile__title { margin-top: 1rem; font-size: 1.125rem; font-weight: 700; line-height: 1.35; }
+.info-tile__subtitle { margin-top: .35rem; font-size: .8125rem; font-weight: 600; line-height: 1.4; letter-spacing: .01em; }
+.info-tile__text { margin-top: .75rem; font-size: .9375rem; line-height: 1.65; flex: 1; }
+.info-tile__cta { margin-top: 1.25rem; font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.info-tile__cta span[aria-hidden] { display: inline-block; transition: transform .25s ease; }
+.info-tile:hover .info-tile__cta span[aria-hidden] { transform: translateX(4px); }

@@ -1,4 +1,4 @@
-/* LEE EUNSANG TAX — shared site script
+/* Lee Eunsang Tax LLC — shared site script
  * - Tailwind theme (brand colors)
  * - Shared header / footer (rendered into #site-header / #site-footer)
  * - Link targets (Client Portal / Secure Upload) set in one place: LINKS
@@ -63,6 +63,7 @@ const KO = {
   ft_firm: '회사명',
   ft_loc_h: '위치',
   ft_loc: '캘리포니아 브레아 (캘리포니아 및 미국 전역 고객 지원)',
+  ft_phone_h: '전화',
   ft_web: '웹사이트',
   ft_menu: '메뉴',
 
@@ -98,7 +99,7 @@ const KO = {
   tile_cta: "상담 문의하기",
   who_eyebrow: 'Our Approach',
   who_title: "지난 신고서를 리뷰하고,\n앞으로의 절세를 설계합니다",
-  who_text: "LEEEUNSANG TAX LLC는 다년간의 플래닝 경험으로, IRS 규정을 준수하면서 합법적인 절세 효과를 누리도록 돕습니다. 지난 신고서를 면밀히 리뷰해 놓친 기회와 위험을 찾고, 지속적인 소통으로 맞춤형 절세 전략을 함께 세웁니다.",
+  who_text: "Lee Eunsang Tax LLC는 다년간의 플래닝 경험으로, IRS 규정을 준수하면서 합법적인 절세 효과를 누리도록 돕습니다. 지난 신고서를 면밀히 리뷰해 놓친 기회와 위험을 찾고, 지속적인 소통으로 맞춤형 절세 전략을 함께 세웁니다.",
   who_li1_t: "선제적 절세 플래닝:",
   who_li1: "Section 179·Bonus Depreciation, Cost Segregation, 부동산 전문가·단기임대 전략, 회계방법 변경, 세액공제를 활용한 맞춤 플래닝",
   who_li2_t: "합리적 비용의 세금 문제 해결:",
@@ -341,8 +342,9 @@ function renderFooter() {
         <div class="md:pr-12">
           <a href="index.html" class="inline-block rounded bg-white px-4 py-3" aria-label="Home">${logoHTML(false)}</a>
           <dl class="mt-7 space-y-3 text-sm">
-            <div><dt class="font-semibold text-white" data-i18n="ft_firm">Firm</dt><dd>LEEEUNSANG TAX LLC</dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_firm">Firm</dt><dd>Lee Eunsang Tax LLC</dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA (Serving clients in California and nationwide)</dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_phone_h">Phone</dt><dd><a href="tel:+17144827903" class="text-brass hover:underline">(714) 482-7903</a></dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_web">Website</dt><dd><a href="https://leeeunsangtax.com" class="text-brass hover:underline">leeeunsangtax.com</a></dd></div>
           </dl>
         </div>
@@ -355,8 +357,8 @@ function renderFooter() {
         </div>
       </div>
       <div class="mt-12 border-t border-white/10 pt-8 space-y-3 text-xs leading-relaxed text-slate-400">
-        <p lang="en">Eunsang Lee is an Enrolled Agent licensed by the U.S. Department of the Treasury to practice before the Internal Revenue Service. LEEEUNSANG TAX LLC is a tax and consulting practice, not a certified public accountancy firm.</p>
-        <p lang="en">Copyright &copy; 2026 LEEEUNSANG TAX LLC. All rights reserved.</p>
+        <p lang="en">Eunsang Lee is an Enrolled Agent licensed by the U.S. Department of the Treasury to practice before the Internal Revenue Service. Lee Eunsang Tax LLC is a tax and consulting practice, not a certified public accountancy firm.</p>
+        <p lang="en">Copyright &copy; 2026 Lee Eunsang Tax LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>`;

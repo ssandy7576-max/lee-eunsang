@@ -1,4 +1,4 @@
-/* LEE EUNSANG TAX — shared styles (Tailwind handles the rest) */
+/* Lee Eunsang Tax LLC — shared styles (Tailwind handles the rest) */
 html[lang="ko"] body { font-family: 'Noto Sans KR', 'Inter', system-ui, sans-serif; word-break: keep-all; }
 [data-i18n] { transition: opacity .16s ease; }
 .i18n-fade [data-i18n] { opacity: 0; }

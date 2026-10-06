@@ -9,8 +9,8 @@
 
 /* ---------- Link targets (edit here only) ---------- */
 const LINKS = {
-  portal: '#',            // TODO: TaxDome client portal login URL (e.g. https://yourfirm.taxdome.com)
-  upload: 'contact.html', // TODO: TaxDome portal / upload URL. Until then, goes to the inquiry form.
+  portal: 'https://snttax.taxdome.com/login', // TaxDome client portal login
+  upload: 'contact', // TODO: TaxDome portal / upload URL. Until then, goes to the inquiry form.
 };
 
 /* ---------- Contact form delivery (edit here only) ----------
@@ -63,7 +63,7 @@ const KO = {
   /* footer */
   ft_firm: '회사명',
   ft_loc_h: '위치',
-  ft_loc: '캘리포니아 브레아 (캘리포니아 및 미국 전역 고객 지원)',
+  ft_loc: "캘리포니아 브레아 · 풀러튼, 요바린다, 플라센티아, 라하브라, 부에나팍 등 오렌지카운티·LA 및 미국 전역",
   ft_phone_h: '전화',
   ft_web: '웹사이트',
   ft_menu: '메뉴',
@@ -76,18 +76,18 @@ const KO = {
   hs2_t: "세무 문제 해결 및 IRS 대리",
   hs2_s: "합리적인 비용의 전담 대리",
   hs2_d: "세무 통지서를 받으면 큰 스트레스를 느끼게 됩니다. 저희가 합리적인 비용으로 고객의 전담 대리인이 되어 그 불안을 덜어드립니다. 문제의 근본 원인을 분석하고 복잡한 법적 절차를 헤쳐 나가며, 세법의 테두리 안에서 적극적으로 협상하여 분쟁을 해결하고 고객의 권익을 지킵니다.",
-  hs3_t: "회계 및 장부 기장 서비스",
+  hs3_t: "장부 기장 및 페이롤 서비스",
   hs3_s: "비즈니스 성장을 위한 든든한 지원",
-  hs3_d: "고객의 필요에 맞춘 비즈니스, 회계, 페이롤 서비스를 종합적으로 제공합니다. 일상적인 재무 업무를 맡겨 주시면, 사업 운영과 성장에만 집중할 수 있는 명확한 재무 현황과 시간을 확보하실 수 있습니다.",
+  hs3_d: "고객의 필요에 맞춘 장부 기장, 페이롤, 사업자 신고 업무를 종합적으로 제공합니다. 일상적인 재무 업무를 맡겨 주시면, 사업 운영과 성장에만 집중할 수 있는 명확한 재무 현황과 시간을 확보하실 수 있습니다.",
   hs4_t: "종합 세금 신고",
   hs4_s: "빠르고 안전한 전문 신고",
-  hs4_d: "15년 이상의 전문성을 바탕으로 빠르고 간편하며 안전한 온라인 세금 신고를 제공합니다. 다주 신고, 비영리단체, 복잡한 국제 세무 사안까지 처리하며, 일반 신고를 넘어 조기 환급(Tentative Refund), AMT 계산, 할부 판매(Installment Sale) 등 고난도 사안도 전문적으로 다룹니다.",
+  hs4_d: "미 연방 세무사(EA)로서 빠르고 간편하며 안전한 온라인 세금 신고를 제공합니다. 다주 신고, 비영리단체, 복잡한 국제 세무 사안까지 처리하며, 일반 신고를 넘어 조기 환급(Tentative Refund), AMT 계산, 할부 판매(Installment Sale) 등 고난도 사안도 전문적으로 다룹니다.",
   home_cta: '안전하게 서류 업로드하기',
   home_cta2: '업무 분야 보기',
 
   tile1_t: "미 연방 세무사(EA) 전문성",
   tile1_s: "IRS 무제한 대리 권한",
-  tile1: "미 재무부 공인 자격으로 IRS 모든 단계에서 고객을 대리합니다.",
+  tile1: "미 연방 재무부가 인가한 세무 대리인(EA)으로서 IRS 모든 단계에서 고객을 대리합니다.",
   tile2_t: "국제 세무 및 해외 자산 신고",
   tile2_s: "글로벌 자산 · 국경 간 규정 준수",
   tile2: "FBAR·FATCA, 해외 소득 공제, 조세조약 적용까지 정확하게 처리합니다.",
@@ -104,14 +104,15 @@ const KO = {
   who_li1_t: "선제적 절세 플래닝:",
   who_li1: "Section 179·Bonus Depreciation, Cost Segregation, 부동산 전문가·단기임대 전략, 회계방법 변경, 세액공제를 활용한 맞춤 플래닝",
   who_li2_t: "합리적 비용의 세금 문제 해결:",
-  who_li2: "OIC(세금 감면 합의), CNC(납부 유예), Levy·급여 압류 해제, 분할납부, 벌금 면제",
+  who_li2: "OIC(세금 감면 합의), CNC(납부 유예), Levy·급여 압류 해제, 분할납부, 가산세 감면",
   who_li3_t: "폭넓은 세무신고 경험:",
   who_li3: "개인(1040), 파트너십(1065), C-Corp(1120), S-Corp(1120-S), 비영리(990, 990-PF), 다주 신고",
   who_li4_t: "100% 페이퍼리스:",
   who_li4: "암호화된 TaxDome 포털로 문서 교환과 전자서명을 언제든 처리해 방문이 필요 없습니다",
 
-  res_title: "Credentials",
-  res1: "년 조세 플래닝·신고 실무 경력",
+  res_title: "자격 및 전문 분야",
+  res1_v: "리더십 경력",
+  res1: "미국 다수의 택스 플래닝 및 회계 법인 팀장 역임 · 고소득자 세무 분석가 및 세금 신고 리더 역임",
   res2: "연방 세무 대리 자격 (IRS 무제한 대리권) 및 경영학 석사",
   res3: "1040 · 1065 · 1120-S · 990-PF 신고 및 플래닝",
   res4: "해외자산 신고(FBAR·FATCA)와 한미 조세조약 관련 플래닝",
@@ -123,7 +124,7 @@ const KO = {
   pa2_t: '세무 문제 해결 및 IRS 방어',
   pa2_s: '위기 관리',
   pa2: '은행·급여 압류 해제, 가산세 감면, OIC, 징수관(RO) 직접 대응.',
-  pa3_t: '기본 세무 및 회계',
+  pa3_t: "기본 세무 및 장부 기장",
   pa3_s: '탄탄한 기초',
   pa3: '오차 없는 다주(Multi-State) 개인·법인 세금 신고와 세무조사에 대비된 장부 관리.',
 
@@ -138,7 +139,7 @@ const KO = {
   talk_title: '상담이 필요하신가요?',
   talk_text: '과거 세금신고서 리뷰 및 상담을 원하시면 문의를 남겨주세요. 모든 업무는 방문 없이 안전한 전용 포털(TaxDome)을 통해 진행됩니다. 상황 검토 후 맞춤 견적 및 포털 초청 링크를 보내드립니다.',
 
-  hero_badge: "미 연방 세무사(EA) · 15년 이상 경력",
+  hero_badge: "브레아·오렌지카운티 한인 세무사 (미 연방 EA) · 절세 · IRS 세금 문제 해결",
   res2_v: "EA · MBA",
   res3_v: "개인 · 법인 · 재단",
   res4_v: "한미세금",
@@ -150,7 +151,7 @@ const KO = {
   bdg6_t: "GTAX 회원",
   bdg7_t: "Real Estate License",
   bdg8_t: "Insurance License",
-  grp4_t: "회계 그룹",
+  grp4_t: "장부 기장 · 페이롤 그룹",
   grp4: "세무조사에 대비된 장부 기장, 재무제표, 페이롤.",
   /* ===== ABOUT ===== */
   about_hero: '회사 소개',
@@ -210,16 +211,16 @@ const KO = {
   prac2_t: '세무 문제 해결 및 IRS 방어',
   prac2_s: '위기 관리',
   prac2: '첫 통지서부터 최종 해결까지, IRS 및 주 정부를 상대로 최일선에서 협상하고 방어합니다. 세무 조사, 체납, 압류 등 위기 상황을 정확히 진단하고 가장 유리한 해법으로 이끕니다.',
-  prac2_a_t: '은행 · 급여 압류 해제',
+  prac2_a_t: "IRS 은행 · 급여 압류 해제",
   prac2_a: '은행 압류(Levy)와 급여 압류(Wage Garnishment)를 신속하게 해제합니다.',
-  prac2_b_t: '가산세 감면',
+  prac2_b_t: "IRS 가산세 감면",
   prac2_b: '최초 위반 감면(First-Time Abatement) 및 합리적 사유(Reasonable Cause)에 근거한 감면을 추진합니다.',
   prac2_c_t: 'OIC · 분할납부',
   prac2_c: '세금 감면 합의(Offer in Compromise)와 감당 가능한 분할납부(Installment Agreement)를 협상합니다.',
   prac2_d_t: '징수관(RO) 직접 대응 · 어필',
   prac2_d: 'Revenue Officer와 직접 협상하고, 필요 시 조세 불복(Appeals) 절차를 진행합니다.',
 
-  prac3_t: '기본 세무 및 회계',
+  prac3_t: "기본 세무 및 장부 기장",
   prac3_s: '탄탄한 기초',
   prac3: '모든 절세와 방어의 출발점은 정확한 신고와 깔끔한 장부입니다. 비즈니스가 언제든 세무조사에 대비할 수 있도록 기초를 탄탄하게 관리합니다.',
   prac3_a_t: '다주 개인 · 법인 세금 신고',
@@ -265,20 +266,20 @@ const KO = {
 /* ---------- Korean page titles / search descriptions (used by tools/build-ko.mjs) ---------- */
 const KO_META = {
   home: {
-    title: '이은상 세무사 | Lee Eunsang Tax LLC — 택스 플래닝 · IRS 세금 문제 해결 | 브레아, CA',
-    description: '이은상 세무사(미 연방 세무사 EA)의 Lee Eunsang Tax LLC. 부동산 투자자, 사업주, 고소득 전문직을 위한 전략적 택스 플래닝과 IRS·주 세금 문제 해결. 캘리포니아 브레아 — 캘리포니아와 미 전역 서비스.',
+    title: '오렌지카운티 한인 세무사 이은상 | 절세·IRS 편지·세금 신고',
+    description: '미 연방 세무사(EA) 이은상 — 브레아·풀러튼·오렌지카운티 한인 사업주와 전문직의 절세, IRS 편지·압류·가산세 문제 해결, 미국 세금 신고, FBAR 신고. 한국어 상담 (714) 482-7903.',
   },
   about: {
-    title: '회사 소개 | 이은상 세무사 (EA · MBA) — Lee Eunsang Tax LLC, 브레아 CA',
-    description: '이은상, 미 연방 세무사(EA)·MBA. 고소득 개인과 사업체를 위한 택스 플래닝, IRS·주 세금 문제 해결. 캘리포니아 브레아.',
+    title: '이은상 세무사 (미 연방 EA·MBA) | 오렌지카운티 한인 세무사',
+    description: '이은상, 미 연방 세무사(EA)·MBA. 미국 다수의 택스 플래닝 및 회계 법인 팀장, 고소득자 세무 분석 및 신고 리더 역임. 브레아·오렌지카운티 한인 사업주·전문직의 절세와 IRS 세금 문제 해결.',
   },
   practice: {
-    title: '업무 분야 | 이은상 세무사 — 택스 플래닝 · 세금 문제 해결, 브레아 CA',
-    description: '택스 플래닝(코스트 세그리게이션, 1031 익스체인지, 잠정 환급), 세금 문제 해결(벌금 감면, 분할 납부, OIC, 압류 해제, 이의 신청), 세무신고, 장부 관리.',
+    title: 'IRS 압류 해제·가산세 감면·FBAR 신고·절세 | 한인 세무사 이은상',
+    description: 'IRS에서 온 편지 대응, 은행·급여 압류 해제, 가산세 감면, 분할납부, OIC, FBAR 신고 누락 해결, S코프·부동산 절세 플래닝, 미국 세금 신고. 브레아·오렌지카운티 미 연방 세무사(EA).',
   },
   contact: {
-    title: '문의하기 | 이은상 세무사 — Lee Eunsang Tax LLC, 브레아 CA',
-    description: '이은상 세무사(EA)에게 상담을 요청하세요. 모든 업무는 TaxDome 고객 포털을 통해 안전하게 원격으로 진행됩니다. 캘리포니아 브레아 — 캘리포니아와 미 전역 서비스.',
+    title: '상담 문의 | 한인 세무사 이은상 (714) 482-7903 | 브레아·오렌지카운티',
+    description: '이은상 세무사(미 연방 EA)에게 한국어로 상담하세요. 미국 세금 신고, 절세, IRS 편지·압류 문제. 모든 서류는 TaxDome 보안 포털로 원격 처리. 브레아·오렌지카운티·LA 및 미국 전역.',
   },
 };
 
@@ -306,10 +307,10 @@ function logoHTML(compact) {
 
 /* ---------- Shared header / footer ---------- */
 const NAV = [
-  { key: 'nav_home', label: 'Home', href: 'index.html', page: 'home' },
-  { key: 'nav_about', label: 'About Us', href: 'about.html', page: 'about' },
-  { key: 'nav_practice', label: 'Practice', href: 'practice.html', page: 'practice' },
-  { key: 'nav_contact', label: 'Contacts', href: 'contact.html', page: 'contact' },
+  { key: 'nav_home', label: 'Home', href: './', page: 'home' },
+  { key: 'nav_about', label: 'About Us', href: 'about', page: 'about' },
+  { key: 'nav_practice', label: 'Practice', href: 'practice', page: 'practice' },
+  { key: 'nav_contact', label: 'Contact', href: 'contact', page: 'contact' },
 ];
 
 /* Same page in the other language: /about <-> /ko/about, / <-> /ko/ */
@@ -332,7 +333,7 @@ function renderHeader(page) {
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-3 h-[72px] sm:h-20">
-        <a href="index.html" class="shrink-0" aria-label="Lee Eunsang — Tax Planning & Resolution, home">
+        <a href="./" class="shrink-0" aria-label="Lee Eunsang — Tax Planning & Resolution, home">
           <span class="hidden sm:block">${logoHTML(false)}</span>
           <span class="sm:hidden">${logoHTML(true)}</span>
         </a>
@@ -368,12 +369,12 @@ function renderFooter() {
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
       <div class="grid gap-10 md:grid-cols-2 md:divide-x md:divide-white/15">
         <div class="md:pr-12">
-          <a href="index.html" class="inline-block rounded bg-white px-4 py-3" aria-label="Home">${logoHTML(false)}</a>
+          <a href="./" class="inline-block rounded bg-white px-4 py-3" aria-label="Home">${logoHTML(false)}</a>
           <dl class="mt-7 space-y-3 text-sm">
             <div><dt class="font-semibold text-white" data-i18n="ft_firm">Firm</dt><dd>Lee Eunsang Tax LLC</dd></div>
-            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA (Serving clients in California and nationwide)</dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA · Serving Fullerton, Yorba Linda, Placentia, La Habra, Buena Park, Orange County, LA County and nationwide</dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_phone_h">Phone</dt><dd><a href="tel:+17144827903" class="text-brass hover:underline">(714) 482-7903</a></dd></div>
-            <div><dt class="font-semibold text-white" data-i18n="ft_web">Website</dt><dd><a href="https://leeeunsangtax.com" class="text-brass hover:underline">leeeunsangtax.com</a></dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_web">Website</dt><dd><a href="https://www.leeeunsangtax.com/" class="text-brass hover:underline">leeeunsangtax.com</a></dd></div>
           </dl>
         </div>
         <div class="md:pl-12 flex flex-col justify-center">
@@ -381,11 +382,11 @@ function renderFooter() {
           <ul class="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm">${links}
             <li><a data-link="portal" href="#" class="hover:text-brass" data-i18n="nav_portal">Client Portal</a></li>
           </ul>
-          <p class="mt-6 text-sm">&copy; 2026 <a href="https://leeeunsangtax.com" class="text-brass hover:underline">leeeunsangtax.com</a></p>
+          <p class="mt-6 text-sm">&copy; 2026 <a href="https://www.leeeunsangtax.com/" class="text-brass hover:underline">leeeunsangtax.com</a></p>
         </div>
       </div>
       <div class="mt-12 border-t border-white/10 pt-8 space-y-3 text-xs leading-relaxed text-slate-400">
-        <p lang="en">Eunsang Lee is an Enrolled Agent licensed by the U.S. Department of the Treasury to practice before the Internal Revenue Service. Lee Eunsang Tax LLC is a tax and consulting practice, not a certified public accountancy firm.</p>
+        <p lang="en">Eunsang Lee is an Enrolled Agent, federally authorized by the U.S. Department of the Treasury to represent taxpayers before the Internal Revenue Service. Lee Eunsang Tax LLC is a tax and consulting practice, not a certified public accounting (CPA) firm; its bookkeeping services do not require a state license.</p>
         <p lang="en">Copyright &copy; 2026 Lee Eunsang Tax LLC. All rights reserved.</p>
       </div>
     </div>

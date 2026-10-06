@@ -9,7 +9,7 @@
 
 /* ---------- Link targets (edit here only) ---------- */
 const LINKS = {
-  portal: '#',            // TODO: TaxDome client portal login URL (e.g. https://yourfirm.taxdome.com)
+  portal: 'https://snttax.taxdome.com/login', // TaxDome client portal login
   upload: 'contact', // TODO: TaxDome portal / upload URL. Until then, goes to the inquiry form.
 };
 
@@ -63,7 +63,7 @@ const KO = {
   /* footer */
   ft_firm: '회사명',
   ft_loc_h: '위치',
-  ft_loc: '캘리포니아 브레아 (캘리포니아 및 미국 전역 고객 지원)',
+  ft_loc: "캘리포니아 브레아 · 풀러튼, 요바린다, 플라센티아, 라하브라, 부에나팍 등 오렌지카운티·LA 및 미국 전역",
   ft_phone_h: '전화',
   ft_web: '웹사이트',
   ft_menu: '메뉴',
@@ -111,8 +111,8 @@ const KO = {
   who_li4: "암호화된 TaxDome 포털로 문서 교환과 전자서명을 언제든 처리해 방문이 필요 없습니다",
 
   res_title: "자격 및 전문 분야",
-  res1_v: "실무 리더십",
-  res1: "이전 세무 사무소 대표 · 택스 플래닝 팀 팀장",
+  res1_v: "리더십 경력",
+  res1: "미국 대형 택스 플래닝 팀장 역임 · 고소득자 세무 분석가 및 세금 신고 리더 역임",
   res2: "연방 세무 대리 자격 (IRS 무제한 대리권) 및 경영학 석사",
   res3: "1040 · 1065 · 1120-S · 990-PF 신고 및 플래닝",
   res4: "해외자산 신고(FBAR·FATCA)와 한미 조세조약 관련 플래닝",
@@ -139,7 +139,7 @@ const KO = {
   talk_title: '상담이 필요하신가요?',
   talk_text: '과거 세금신고서 리뷰 및 상담을 원하시면 문의를 남겨주세요. 모든 업무는 방문 없이 안전한 전용 포털(TaxDome)을 통해 진행됩니다. 상황 검토 후 맞춤 견적 및 포털 초청 링크를 보내드립니다.',
 
-  hero_badge: "브레아 · 오렌지카운티 미 연방 세무사(EA) · 절세 플래닝 · IRS 세금 문제 해결",
+  hero_badge: "브레아·오렌지카운티 한인 세무사 (미 연방 EA) · 절세 · IRS 세금 문제 해결",
   res2_v: "EA · MBA",
   res3_v: "개인 · 법인 · 재단",
   res4_v: "한미세금",
@@ -211,9 +211,9 @@ const KO = {
   prac2_t: '세무 문제 해결 및 IRS 방어',
   prac2_s: '위기 관리',
   prac2: '첫 통지서부터 최종 해결까지, IRS 및 주 정부를 상대로 최일선에서 협상하고 방어합니다. 세무 조사, 체납, 압류 등 위기 상황을 정확히 진단하고 가장 유리한 해법으로 이끕니다.',
-  prac2_a_t: '은행 · 급여 압류 해제',
+  prac2_a_t: "IRS 은행 · 급여 압류 해제",
   prac2_a: '은행 압류(Levy)와 급여 압류(Wage Garnishment)를 신속하게 해제합니다.',
-  prac2_b_t: '가산세 감면',
+  prac2_b_t: "IRS 가산세 감면",
   prac2_b: '최초 위반 감면(First-Time Abatement) 및 합리적 사유(Reasonable Cause)에 근거한 감면을 추진합니다.',
   prac2_c_t: 'OIC · 분할납부',
   prac2_c: '세금 감면 합의(Offer in Compromise)와 감당 가능한 분할납부(Installment Agreement)를 협상합니다.',
@@ -266,20 +266,20 @@ const KO = {
 /* ---------- Korean page titles / search descriptions (used by tools/build-ko.mjs) ---------- */
 const KO_META = {
   home: {
-    title: '브레아·오렌지카운티 한인 세무사 | 절세·IRS 세금 문제 해결 | 이은상 세무사',
-    description: '미 연방 세무사(EA) 이은상 — 브레아·풀러튼·오렌지카운티 사업주와 전문직을 위한 절세 플래닝, IRS·FTB 세금 문제 해결, 세금 신고. 한국어 상담 (714) 482-7903.',
+    title: '오렌지카운티 한인 세무사 이은상 | 절세·IRS 편지·세금 신고',
+    description: '미 연방 세무사(EA) 이은상 — 브레아·풀러튼·오렌지카운티 한인 사업주와 전문직의 절세, IRS 편지·압류·가산세 문제 해결, 미국 세금 신고, FBAR 신고. 한국어 상담 (714) 482-7903.',
   },
   about: {
-    title: '회사 소개 | 이은상 세무사 (EA · MBA) — Lee Eunsang Tax LLC, 브레아 CA',
-    description: '이은상, 미 연방 세무사(EA)·MBA. 고소득 개인과 사업체를 위한 택스 플래닝, IRS·주 세금 문제 해결. 캘리포니아 브레아.',
+    title: '이은상 세무사 (미 연방 EA·MBA) | 오렌지카운티 한인 세무사',
+    description: '이은상, 미 연방 세무사(EA)·MBA. 미국 대형 택스 플래닝 팀장, 고소득자 세무 분석 및 신고 리더 역임. 브레아·오렌지카운티 한인 사업주·전문직의 절세와 IRS 세금 문제 해결.',
   },
   practice: {
-    title: '업무 분야 | 절세 플래닝 · IRS 압류 해제 · 가산세 감면 | 이은상 세무사, 브레아',
-    description: '택스 플래닝(코스트 세그리게이션, 1031 익스체인지, 잠정 환급), 세금 문제 해결(가산세 감면, 분할 납부, OIC, 압류 해제, 이의 신청), 세무신고, 장부 관리.',
+    title: 'IRS 압류 해제·가산세 감면·FBAR 신고·절세 | 한인 세무사 이은상',
+    description: 'IRS에서 온 편지 대응, 은행·급여 압류 해제, 가산세 감면, 분할납부, OIC, FBAR 신고 누락 해결, S코프·부동산 절세 플래닝, 미국 세금 신고. 브레아·오렌지카운티 미 연방 세무사(EA).',
   },
   contact: {
-    title: '상담 문의 | 이은상 세무사 (714) 482-7903 | 브레아·오렌지카운티',
-    description: '이은상 세무사(EA)에게 상담을 요청하세요. 모든 업무는 TaxDome 고객 포털을 통해 안전하게 원격으로 진행됩니다. 캘리포니아 브레아 — 캘리포니아와 미 전역 서비스.',
+    title: '상담 문의 | 한인 세무사 이은상 (714) 482-7903 | 브레아·오렌지카운티',
+    description: '이은상 세무사(미 연방 EA)에게 한국어로 상담하세요. 미국 세금 신고, 절세, IRS 편지·압류 문제. 모든 서류는 TaxDome 보안 포털로 원격 처리. 브레아·오렌지카운티·LA 및 미국 전역.',
   },
 };
 
@@ -372,7 +372,7 @@ function renderFooter() {
           <a href="./" class="inline-block rounded bg-white px-4 py-3" aria-label="Home">${logoHTML(false)}</a>
           <dl class="mt-7 space-y-3 text-sm">
             <div><dt class="font-semibold text-white" data-i18n="ft_firm">Firm</dt><dd>Lee Eunsang Tax LLC</dd></div>
-            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA (Serving clients in California and nationwide)</dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA · Serving Fullerton, Yorba Linda, Placentia, La Habra, Buena Park, Orange County, LA County and nationwide</dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_phone_h">Phone</dt><dd><a href="tel:+17144827903" class="text-brass hover:underline">(714) 482-7903</a></dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_web">Website</dt><dd><a href="https://www.leeeunsangtax.com/" class="text-brass hover:underline">leeeunsangtax.com</a></dd></div>
           </dl>

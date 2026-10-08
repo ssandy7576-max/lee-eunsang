@@ -1,6 +1,6 @@
 # 검색 상위 노출을 위한 작업 메모
 
-마지막 정리: 2026-10-03
+마지막 정리: 2026-10-07
 
 ## 이번에 한 것 (1단계: 한국어 검색 노출)
 - 한국어 페이지를 별도 주소로 만듦: `/ko/`, `/ko/about`, `/ko/practice`, `/ko/contact`
@@ -41,12 +41,17 @@
 ### 검색·키워드
 - [ ] 키워드 조사: Google 키워드 플래너, 네이버 키워드 도구 → 제목·설명·본문에 반영
 - [ ] 지역 표현 보강 (예: 오렌지카운티·LA 지역 서비스. 주소(street)는 쓰지 않음)
-- [ ] Bing Webmaster Tools, 네이버 서치어드바이저, Daum 웹마스터도구 등록
+- [x] Google Search Console 등록 (10/6, 도메인 DNS 인증)
+- [x] Bing Webmaster Tools 등록 (10/6)
+- [ ] 네이버 서치어드바이저: 인증 태그 추가 (10/7, `index.html` head) → 배포 후 소유확인 → 사이트맵 제출
+- [ ] Daum 웹마스터도구 등록
 - [ ] 매월 Search Console "검색어" 보고서 확인 → 문구·블로그 주제에 반영
 
 ### 리뷰·TaxDome
 - [ ] 리뷰는 홈페이지가 아니라 Google 비즈니스 프로필에서 받기. 사이트에는 리뷰 링크만
-- [ ] TaxDome 포털 주소를 Client Portal / Secure Upload 버튼에 연결 (`site.js`의 `LINKS`)
+- [x] Client Portal 버튼 연결: `snttax.taxdome.com/login` (`site.js`의 `LINKS.portal`)
+- [ ] TaxDome 커스텀 도메인(portal.leeeunsangtax.com) 설정 후 `LINKS.portal` 교체
+- [ ] Secure Upload 버튼(`LINKS.upload`): 현재 문의 페이지로 연결
 - [ ] TaxDome 자동화: 신고 완료·결제 후 구글 리뷰 요청 메시지 자동 발송
 
 ### 블로그 (AI agent 작성)

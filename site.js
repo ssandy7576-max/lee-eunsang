@@ -173,11 +173,11 @@ const KO = {
   grp_title: '전문 업무 그룹',
   grp_sub: "고객의 세무 니즈별로 전문화된 4개의 업무 그룹을 운영합니다.",
   grp1_t: "택스 플래닝 그룹",
-  grp1: 'Cost Segregation, 1031 교환, 사업 구조(S-Corp) 및 은퇴 플랜 설계.',
+  grp1: '비즈니스를 통한 절세(패밀리 매니지먼트 컴퍼니, 개인 재단 990-PF 등), R&D·에너지 크레딧, 부동산 절세(1031 교환, 할부 판매, 회계방법 변경, Cost Segregation 가속상각).',
   grp2_t: "택스 레졸루션 그룹",
-  grp2: '압류 해제, 가산세 감면, OIC, 분할납부, 징수관(RO) 대응, 어필.',
+  grp2: '원인을 정확히 진단해 고객의 부담을 최대한 덜어드립니다. 압류 해제, 가산세 감면, OIC, 분할납부, 징수관(RO) 대응, 어필.',
   grp3_t: "세금 신고 그룹",
-  grp3: "오차 없는 다주 개인·법인 세금 신고 및 비영리단체 신고.",
+  grp3: '오차 없는 다주 개인·법인 세금 신고, 비영리단체 신고, Form 1045 임시 환급(Tentative Refund).',
 
   cred_title: '학력 및 전문 자격',
   cred1: '미 연방 세무사 (Enrolled Agent, EA)',
@@ -189,7 +189,9 @@ const KO = {
   exp_title: '대표 경력',
   exp1: 'Space and Time Tax Service 대표(Owner) 역임',
   exp2: 'No. 1 Tax Pro 대표 세무사(Lead Tax Professional) 역임',
-  exp3: '다수의 전문 Tax Planning Firm 및 회계 법인 팀장(Manager) 역임',
+  exp3: '미국 여러 택스 플래닝·회계 법인 Tax Planning 팀장 역임',
+  exp5: '의사·고소득 전문직 Tax Planning 및 Tax Analyst 역임',
+  exp6: 'Tax Preparation 리더 역임',
   exp4: '오랜 세월에 걸쳐 쌓은 세무 및 회계 실무 경력',
 
   /* ===== PRACTICE ===== */

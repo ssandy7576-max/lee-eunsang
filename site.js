@@ -266,7 +266,7 @@ const KO = {
 /* ---------- Korean page titles / search descriptions (used by tools/build-ko.mjs) ---------- */
 const KO_META = {
   home: {
-    title: '오렌지카운티 한인 세무사 이은상 | 절세·IRS 편지·세금 신고',
+    title: '오렌지카운티 한인 세무사 이은상(미 연방 EA) | 절세·IRS 편지·세금 신고',
     description: '미 연방 세무사(EA) 이은상 — 브레아·풀러튼·오렌지카운티 한인 사업주와 전문직의 절세, IRS 편지·압류·가산세 문제 해결, 미국 세금 신고, FBAR 신고. 한국어 상담 (714) 482-7903.',
   },
   about: {

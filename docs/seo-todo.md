@@ -33,7 +33,7 @@
 
 ### 문구 (사용자 확정 필요)
 - [ ] 경력 숫자(15년·20년) 전부 제거 → 실무 리더십 문구로 교체 (이전 사무소 대표, 미국 중견 택스 플래닝 팀 팀장)
-- [ ] "Practice Groups" → "Practice Teams" / "그룹" → "팀" (화면 문구만)
+- [x] "Practice Groups" → "Practice Teams" / "그룹" → "팀" (10/10)
 - [ ] 문의 페이지 연락처에 전화번호 추가 (푸터·JSON-LD에는 이미 있음)
 - [ ] 영어 페이지에 "Korean-speaking Enrolled Agent" 문구 추가 여부
 - [ ] 가산세 감면 용어 통일: "벌금 감면/면제" vs "가산세 감면"

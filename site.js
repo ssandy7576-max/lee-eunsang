@@ -10,6 +10,7 @@
 /* ---------- Link targets (edit here only) ---------- */
 const LINKS = {
   portal: 'https://snttax.taxdome.com/login', // TaxDome client portal login
+  kakao: 'https://pf.kakao.com/_mxbVFX/chat', // KakaoTalk channel "이은상 세무사" (search ID leeeunsangtax)
   upload: 'contact', // TODO: TaxDome portal / upload URL. Until then, goes to the inquiry form.
 };
 
@@ -241,6 +242,9 @@ const KO = {
   c_direct: "모든 문의는 신중하고 비밀이 보장되는 검토를 거칩니다.",
   c_portal_h: '기존 고객',
   c_portal: 'TaxDome 고객 포털 로그인 →',
+  c_kakao_h: '카카오톡 상담',
+  c_kakao: '카카오톡 채널로 문의하기 →',
+  c_kakao_note: '일반 문의만 받습니다. 사회보장번호(SSN)나 세무 서류는 카카오톡으로 보내지 마시고, 보안 포털(TaxDome)을 이용해 주세요.',
   step_title: '진행 절차',
   step1: '문의 양식 제출',
   step2: '상황 검토',

@@ -24,7 +24,7 @@ const RULES = [
   ['ERROR', '이전 회사명 (SNT)', /space and time|시공간|\bSNT\b|No\.\s?1 Tax Pro|넘버원/i],
   ['ERROR', '1인 사무소 표현', /1인 사무소|solo practi|one-person/i],
   ['ERROR', '경력 연수 표기', /\d+\s*\+?\s*(years? of experience|년\s*(경력|이상의 경험))/i],
-  ['WARN', '최상급 표현 (가장/최고/완벽/best)', /가장|최고|완벽|\bbest\b|perfect|#1(?![0-9a-f])/i, /가장 중요한/],
+  ['WARN', '최상급 표현 (가장/최고/완벽/best)', /가장|최고|완벽|\bbest\b|safest|fastest|perfect|#1(?![0-9a-f])/i, /가장 중요한/],
   ['WARN', '"회계사" (대표는 CPA가 아님)', /회계사/],
   ['WARN', '결과 보장처럼 읽히는 표현', /guarantee|보장/i, /사회보장번호|비밀이 보장/],
   ['WARN', 'snttax 주소 (커스텀 도메인 전환 전까지 허용)', /snttax/i],

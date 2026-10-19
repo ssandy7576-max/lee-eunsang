@@ -140,7 +140,7 @@ const KO = {
   talk_title: '상담이 필요하신가요?',
   talk_text: '과거 세금신고서 리뷰 및 상담을 원하시면 문의를 남겨주세요. 모든 업무는 방문 없이 안전한 전용 포털(TaxDome)을 통해 진행됩니다. 상황 검토 후 맞춤 견적 및 포털 초청 링크를 보내드립니다.',
 
-  hero_badge: "브레아·오렌지카운티 한인 세무사 (미 연방 EA) · 절세 · IRS 세금 문제 해결",
+  hero_badge: "브레아 세무사 이은상 | 세금보고 · 택스 플래닝 · IRS 문제 해결",
   res2_v: "EA · MBA",
   res3_v: "개인 · 법인 · 재단",
   res4_v: "한미세금",
@@ -262,6 +262,91 @@ const KO = {
   f_error: '모든 항목을 입력하고 올바른 이메일 주소를 적어주세요.',
   f_success: '감사합니다! 문의 내용을 검토한 후 빠르게 연락드리겠습니다.',
 
+  /* ===== TAX PREPARATION PAGES: shared section headings ===== */
+  sec_handle: "준비하는 신고",
+  sec_how: "진행 순서",
+  sec_why: "고객이 저희를 선택하는 이유",
+  sec_areas: "서비스 지역",
+  sec_faq: "자주 묻는 질문",
+
+  /* ===== TAX PREPARATION IN BREA, CA (/tax-preparation) ===== */
+  tp_h1: "브레아 세금보고, 개인과 가족을 위한 세금신고",
+  tp_intro: "연방 세무사(EA)로서 IRS 앞에서 업무를 수행할 자격이 등록된 이은상이 신고서를 준비하고 검토합니다. 브레아와 인근 도시, 그리고 원격으로 한국어와 영어로 도와드립니다. 꼼꼼하게, 정확하게, 끝까지. 첫 서류부터 신고 완료까지 이 기준을 지킵니다.",
+  tp_i1: "개인 소득세 신고(Form 1040)",
+  tp_i2: "여러 주에 걸친 멀티스테이트 신고",
+  tp_i3: "FBAR·FATCA 해외자산 신고",
+  tp_i4: "수정신고(Amended Return)",
+  tp_i5: "과거 3년 신고서 검토를 통한 환급 가능성 확인",
+  tp_i6: "잠정 환급 신청(Form 1045)",
+  tp_i7: "신고 전 택스 플래닝 상담 등 지속적인 상담",
+  tp_s1_t: "문의",
+  tp_s1_d: "전화, 이메일, 상담 신청서로 연락 주시면 상황과 필요한 자료를 확인합니다.",
+  tp_s2_t: "TaxDome 포털 초대",
+  tp_s2_d: "암호화된 TaxDome 고객 포털 초대를 보내드립니다.",
+  tp_s3_t: "서류 접수와 다단계 검토",
+  tp_s3_d: "포털에 안전하게 서류를 올리시면 신고서를 준비하고 여러 단계로 검토합니다.",
+  tp_s4_t: "전자서명과 신고",
+  tp_s4_d: "포털에서 내용을 확인하고 전자서명, 결제를 마치면 신고를 진행합니다.",
+  tp_w1: "NAEA 회원이며 IRS 앞에서 업무를 수행할 자격이 등록된 연방 세무사(EA)가 이끕니다.",
+  tp_w2: "의사 등 고소득 전문직을 위한 택스 플래닝과 분석 업무를 맡았고, 미국 전역의 멀티스테이트 신고 경험이 있습니다.",
+  tp_w3: "암호화된 포털로 업로드, 전자서명, 결제까지 종이 없이 진행하며 원격 서비스도 가능합니다.",
+  tp_w4: "한국어와 영어로 편하게 상담하실 수 있습니다.",
+  tp_areas: "브레아, 풀러튼, 플라센티아, 부에나파크, 가든그로브, 다이아몬드바, 요바린다, 라하브라, 그리고 원격으로 전국 어디서든 가능합니다.",
+  tp_q1: "브레아 밖에 살아도 세금보고를 맡길 수 있나요?",
+  tp_a1: "네. 종이 없는 원격 방식이라 어디서든 진행하실 수 있습니다.",
+  tp_q2: "여러 주에 살았거나 일했는데 가능한가요?",
+  tp_a2: "네. 멀티스테이트 신고를 준비하며, 서류를 확인한 뒤 해당되는 주를 함께 점검합니다.",
+  tp_q3: "해외 계좌나 자산 신고도 하시나요?",
+  tp_a3: "네. FBAR와 FATCA 신고를 도와드립니다. 신고 대상 여부는 개인 상황에 따라 다르므로 함께 검토합니다.",
+  tp_q4: "이미 신고한 내용도 봐주시나요?",
+  tp_a4: "네. 이전 신고서를 검토해 수정신고가 적절한지 확인합니다. 가능 여부는 각 사례의 사실관계에 따라 달라집니다.",
+  tp_cta: "상담 신청 또는 전화 (714) 482-7903 으로 문의해 주세요. 한국어와 영어 모두 가능합니다.",
+  tp_other: "사업체 대표님이신가요? 비즈니스 세금보고 보기",
+
+  /* ===== BUSINESS TAX PREPARATION IN BREA, CA (/business-tax-preparation) ===== */
+  bp_h1: "브레아 비즈니스 세금보고, 사업체와 단체를 위한 세금신고",
+  bp_intro: "LLC, 파트너십, S-Corp, C-Corp, 비영리단체의 세금 신고서를 준비합니다. IRS 앞에서 업무를 수행할 자격이 등록된 연방 세무사(EA) 이은상의 책임 아래 여러 단계로 검토합니다. 한국어와 영어로, 브레아 인근 또는 원격으로 진행합니다.",
+  bp_i1: "파트너십 신고(Form 1065)",
+  bp_i2: "S-Corp 신고(Form 1120-S)",
+  bp_i3: "C-Corp 신고(Form 1120)",
+  bp_i4: "LLC 신고: 과세 방식에 따라 해당 양식으로 진행",
+  bp_i5: "비영리단체 신고(Form 990, 990-PF)",
+  bp_i6: "멀티스테이트 비즈니스 신고",
+  bp_i7: "수정신고",
+  bp_i8: "해외 계좌가 있는 사업주를 위한 FBAR·FATCA 신고",
+  bp_i9: "신고서의 바탕이 되는 장부와 페이롤 자료를 맞추는 조율",
+  bp_s1_t: "문의",
+  bp_s1_d: "전화, 이메일, 상담 신청서로 연락 주시면 사업체 형태와 필요한 자료를 확인합니다.",
+  bp_s2_t: "TaxDome 포털 초대",
+  bp_s2_d: "암호화된 TaxDome 고객 포털 초대를 보내드립니다.",
+  bp_s3_t: "서류 접수와 다단계 검토",
+  bp_s3_d: "재무 자료를 포털에 안전하게 올리시면 장부와 맞춰 신고서를 준비하고 여러 단계로 검토합니다.",
+  bp_s4_t: "전자서명과 신고",
+  bp_s4_d: "포털에서 확인, 전자서명, 결제를 마치면 신고를 진행합니다.",
+  bp_w1: "NAEA 회원이며 IRS 앞에서 업무를 수행할 자격이 등록된 연방 세무사(EA)가 이끕니다.",
+  bp_w2: "의사 등 고소득 전문직을 위한 택스 플래닝과 분석 업무, 여러 회사에서의 세금보고 총괄 경험으로 법인 신고와 사업주 개인의 플래닝을 함께 살핍니다.",
+  bp_w3: "암호화된 포털로 종이 없이 진행하며 원격 서비스도 가능합니다.",
+  bp_w4: "한국어와 영어로 편하게 상담하실 수 있습니다.",
+  bp_areas: "브레아, 풀러튼, 플라센티아, 부에나파크, 가든그로브, 다이아몬드바, 요바린다, 라하브라, 그리고 원격으로 전국 사업체를 지원합니다.",
+  bp_q1: "제 LLC는 어떤 양식으로 신고하나요?",
+  bp_a1: "LLC가 어떤 방식으로 과세되는지(파트너십, S-Corp, C-Corp 등)에 따라 달라집니다. 시작할 때 함께 확인합니다.",
+  bp_q2: "기존 북키퍼나 페이롤 업체와 같이 일할 수 있나요?",
+  bp_a2: "네. 신고서의 바탕이 되는 기록이 일치하도록 기존 장부와 페이롤을 조율합니다. 어카운팅 지원도 상담해 드립니다.",
+  bp_q3: "비영리단체나 재단 신고도 하나요?",
+  bp_a3: "네. Form 990과 990-PF 신고를 준비합니다.",
+  bp_q4: "여러 주에서 사업을 하는데 가능한가요?",
+  bp_a4: "네. 멀티스테이트 비즈니스 신고를 준비하며 해당 주를 함께 점검합니다.",
+  bp_cta: "상담 신청 또는 전화 (714) 482-7903 으로 문의해 주세요. 한국어와 영어 모두 가능합니다.",
+  bp_other: "개인 신고가 필요하신가요? 개인 세금보고 보기",
+
+  /* home: links to the tax preparation pages */
+  home_link_tp: '개인 세금보고 자세히 보기',
+  home_link_bp: '비즈니스 세금보고 자세히 보기',
+
+  /* footer: tax preparation pages */
+  ft_taxprep: '개인 세금보고',
+  ft_biztaxprep: '비즈니스 세금보고',
+
   /* placeholders */
   ph_name: '홍길동',
   ph_msg: '상황을 간단히 적어주세요. (예: IRS 통지서 수령, 다주 세금 신고, 절세 플래닝 등)',
@@ -270,8 +355,8 @@ const KO = {
 /* ---------- Korean page titles / search descriptions (used by tools/build-ko.mjs) ---------- */
 const KO_META = {
   home: {
-    title: '오렌지카운티 한인 세무사 이은상 | 절세·IRS 편지·세금 신고',
-    description: '미 연방 세무사(EA) 이은상 — 브레아·풀러튼·오렌지카운티 한인 사업주와 전문직의 절세, IRS 편지·압류·가산세 문제 해결, 미국 세금 신고, FBAR 신고. 한국어 상담 (714) 482-7903.',
+    title: '브레아 세무사 이은상 | 세금보고·세금신고·택스 플래닝',
+    description: '브레아 세금보고·세금신고는 연방 세무사(EA) 이은상이 맡습니다. 개인·비즈니스 세금보고, 택스 플래닝, IRS 문제 해결. 한국어·영어 상담.',
   },
   about: {
     title: '이은상 세무사 (미 연방 EA·MBA) | 오렌지카운티 한인 세무사',
@@ -284,6 +369,14 @@ const KO_META = {
   contact: {
     title: '상담 문의 | 한인 세무사 이은상 (714) 482-7903 | 브레아·오렌지카운티',
     description: '이은상 세무사(미 연방 EA)에게 한국어로 상담하세요. 미국 세금 신고, 절세, IRS 편지·압류 문제. 모든 서류는 TaxDome 보안 포털로 원격 처리. 브레아·오렌지카운티·LA 및 미국 전역.',
+  },
+  taxprep: {
+    title: "브레아 세금보고 | 개인 세금신고 · 세무사 이은상(EA)",
+    description: "브레아 개인·가족 세금보고(세금신고). 멀티스테이트, FBAR·FATCA 해외자산 신고까지, 연방 세무사(EA)가 직접 검토합니다. 한국어·영어 상담.",
+  },
+  bizprep: {
+    title: "브레아 비즈니스 세금보고 | LLC·S-Corp·C-Corp 세금신고",
+    description: "브레아 비즈니스 세금보고(세금신고). LLC, 파트너십, S-Corp, C-Corp, 비영리단체까지 연방 세무사(EA)가 다단계로 검토합니다. 한국어·영어 상담.",
   },
 };
 
@@ -315,6 +408,12 @@ const NAV = [
   { key: 'nav_about', label: 'About Us', href: 'about', page: 'about' },
   { key: 'nav_practice', label: 'Practice', href: 'practice', page: 'practice' },
   { key: 'nav_contact', label: 'Contact', href: 'contact', page: 'contact' },
+];
+
+/* Extra footer links (not in the main nav) */
+const FOOTER_EXTRA = [
+  { key: 'ft_taxprep', label: 'Tax Preparation', href: 'tax-preparation' },
+  { key: 'ft_biztaxprep', label: 'Business Tax Preparation', href: 'business-tax-preparation' },
 ];
 
 /* Same page in the other language: /about <-> /ko/about, / <-> /ko/ */
@@ -367,7 +466,8 @@ function renderHeader(page) {
 }
 
 function renderFooter() {
-  const links = NAV.map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('');
+  const links = NAV.map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('')
+    + FOOTER_EXTRA.map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('');
   return `
   <footer class="bg-navy-deep text-slate-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">

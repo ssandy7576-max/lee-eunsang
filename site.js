@@ -64,7 +64,7 @@ const KO = {
   /* footer */
   ft_firm: '회사명',
   ft_loc_h: '위치',
-  ft_loc: "캘리포니아 브레아 · 풀러튼, 요바린다, 플라센티아, 라하브라, 부에나팍 등 오렌지카운티·LA 및 미국 전역",
+  ft_loc: "캘리포니아 브레아 · 요바린다, 풀러튼, 플라센티아, 부에나파크, 애너하임, 어바인, 라하브라, 다이아몬드바 및 미국 전역",
   ft_phone_h: '전화',
   ft_web: '웹사이트',
   ft_menu: '메뉴',
@@ -264,6 +264,7 @@ const KO = {
 
   /* ===== TAX PREPARATION PAGES: shared section headings ===== */
   sec_handle: "준비하는 신고",
+  sec_scope: "업무 범위",
   sec_how: "진행 순서",
   sec_why: "고객이 저희를 선택하는 이유",
   sec_areas: "서비스 지역",
@@ -291,8 +292,8 @@ const KO = {
   tp_w2: "의사 등 고소득 전문직을 위한 택스 플래닝과 분석 업무를 맡았고, 미국 전역의 멀티스테이트 신고 경험이 있습니다.",
   tp_w3: "암호화된 포털로 업로드, 전자서명, 결제까지 종이 없이 진행하며 원격 서비스도 가능합니다.",
   tp_w4: "한국어와 영어로 편하게 상담하실 수 있습니다.",
-  tp_areas: "브레아, 풀러튼, 플라센티아, 부에나파크, 가든그로브, 다이아몬드바, 요바린다, 라하브라, 그리고 원격으로 전국 어디서든 가능합니다.",
-  tp_q1: "브레아 밖에 살아도 세금보고를 맡길 수 있나요?",
+  tp_areas: "브레아, 요바린다, 풀러튼, 플라센티아, 부에나파크, 애너하임, 어바인, 라하브라, 다이아몬드바, 그리고 원격으로 전국 어디서든 가능합니다.",
+  tp_q1: "풀러튼·애너하임·어바인 등 브레아 밖에 살아도 세금보고를 맡길 수 있나요?",
   tp_a1: "네. 종이 없는 원격 방식이라 어디서든 진행하실 수 있습니다.",
   tp_q2: "여러 주에 살았거나 일했는데 가능한가요?",
   tp_a2: "네. 멀티스테이트 신고를 준비하며, 서류를 확인한 뒤 해당되는 주를 함께 점검합니다.",
@@ -327,7 +328,7 @@ const KO = {
   bp_w2: "의사 등 고소득 전문직을 위한 택스 플래닝과 분석 업무, 세금보고 리더(Tax Preparation Lead) 경험으로 법인 신고와 사업주 개인의 플래닝을 함께 살핍니다.",
   bp_w3: "암호화된 포털로 종이 없이 진행하며 원격 서비스도 가능합니다.",
   bp_w4: "한국어와 영어로 편하게 상담하실 수 있습니다.",
-  bp_areas: "브레아, 풀러튼, 플라센티아, 부에나파크, 가든그로브, 다이아몬드바, 요바린다, 라하브라, 그리고 원격으로 전국 사업체를 지원합니다.",
+  bp_areas: "브레아, 요바린다, 풀러튼, 플라센티아, 부에나파크, 애너하임, 어바인, 라하브라, 다이아몬드바, 그리고 원격으로 전국 사업체를 지원합니다.",
   bp_q1: "제 LLC는 어떤 양식으로 신고하나요?",
   bp_a1: "LLC가 어떤 방식으로 과세되는지(파트너십, S-Corp, C-Corp 등)에 따라 달라집니다. 시작할 때 함께 확인합니다.",
   bp_q2: "기존 북키퍼나 페이롤 업체와 같이 일할 수 있나요?",
@@ -343,9 +344,105 @@ const KO = {
   home_link_tp: '개인 세금보고 자세히 보기',
   home_link_bp: '비즈니스 세금보고 자세히 보기',
 
-  /* footer: tax preparation pages */
+  /* ===== TAX PLANNING IN BREA, CA (/tax-planning) ===== */
+  pl_h1: "브레아 택스 플래닝, 개인·가정·사업주를 위한 절세 설계",
+  pl_intro: "택스 플래닝은 한 해가 끝나기 전에 해야 효과가 큽니다. IRS 앞에서 업무를 수행할 자격이 등록된 연방 세무사(EA) 이은상이 상황을 검토하고, 법이 허용하는 범위 안에서 세금을 줄일 방법을 찾습니다. 직장인, 가정, 사업주 모두 한국어와 영어로 상담하실 수 있습니다.",
+  pl_i1: "연중·연말 세금 예상 계산으로 신고 때 놀라지 않도록 준비",
+  pl_i2: "사업주를 위한 사업 구조 검토(S-Corp 선택 포함)",
+  pl_i3: "사업주와 자영업자를 위한 은퇴 플랜 검토",
+  pl_i4: "요건을 갖춘 사업체의 R&D·에너지 세액공제",
+  pl_i5: "부동산: 1031 교환, 할부 판매, Cost Segregation",
+  pl_i6: "지난 3개년 신고서에서 놓친 공제와 크레딧 검토",
+  pl_s1_t: "상담",
+  pl_s1_d: "소득, 가족, 사업 상황과 올해의 목표를 함께 확인합니다.",
+  pl_s2_t: "신고서 검토",
+  pl_s2_d: "최근 신고서와 자료를 TaxDome 보안 포털로 받아 검토합니다.",
+  pl_s3_t: "서면 플랜",
+  pl_s3_d: "각 단계를 왜, 언제 해야 하는지 설명한 플랜을 드립니다.",
+  pl_s4_t: "신고까지 연결",
+  pl_s4_d: "연말 전에 진행 상황을 점검하고, 플랜을 세금보고에 그대로 반영합니다.",
+  pl_w3: "플랜과 세금보고를 같은 팀이 맡아, 세운 전략이 신고서까지 이어집니다.",
+  pl_q1: "택스 플래닝은 고소득자만 하는 건가요?",
+  pl_a1: "아닙니다. 직장인, 가정, 소규모 사업주도 연말 전에 원천징수, 은퇴 적립, 크레딧을 점검하면 도움이 될 수 있습니다.",
+  pl_q2: "언제 시작하는 것이 좋나요?",
+  pl_a2: "조치할 시간이 있는 연말 전이 좋습니다. 일부 방법은 12월 31일까지 실행해야 그해에 반영됩니다.",
+  pl_q3: "이미 신고한 내용도 봐주시나요?",
+  pl_a3: "네. 지난 3개년 신고서에서 놓친 공제와 크레딧을 검토합니다. 수정신고가 적절한지는 각 사례의 사실관계에 따라 달라집니다.",
+  pl_q4: "브레아가 아니라 어바인이나 애너하임에 살아도 되나요?",
+  pl_a4: "네. 방문 상담과 원격 상담 모두 가능하며, 서류는 보안 포털로 주고받습니다.",
+  pl_other: "세금보고가 필요하신가요? 개인 세금보고 보기",
+
+  /* ===== IRS TAX HELP IN BREA, CA (/irs-tax-help) ===== */
+  ir_h1: "브레아 IRS 문제 해결, 통지서·압류·가산세·분할납부",
+  ir_intro: "IRS 편지는 함께 읽어 줄 사람이 있으면 훨씬 수월합니다. 이은상(EA)은 IRS 앞에서 납세자를 대리할 자격이 등록된 연방 세무사입니다. 통지서를 검토해 왜 발송됐는지, 무엇을 요구하는지 설명하고, 상황에 맞는 방법으로 해결합니다. 한국어와 영어로 상담하실 수 있습니다.",
+  ir_i1: "IRS·주 정부 세무 통지서와 편지: 검토, 회신, 기한 관리",
+  ir_i2: "은행 압류(Levy)와 급여 압류 해제",
+  ir_i3: "가산세 감면: 최초 위반 감면(First-Time Abatement)과 합리적 사유",
+  ir_i4: "분할납부(Installment Agreement)",
+  ir_i5: "세금 감면 합의(OIC)와 징수 유예(CNC)",
+  ir_i6: "미신고 연도 세금보고로 정상화",
+  ir_i7: "징수관(Revenue Officer) 직접 대응과 필요 시 어필",
+  ir_s1_t: "통지서 보내기",
+  ir_s1_d: "TaxDome 보안 포털로 통지서 사본을 올려 주세요. 회신 기한부터 확인합니다.",
+  ir_s2_t: "위임장 서명",
+  ir_s2_d: "Form 2848에 서명하시면 IRS와 직접 통화하고 납세 기록(Transcript)을 확인할 수 있습니다.",
+  ir_s3_t: "검토와 해결 방안",
+  ir_s3_d: "통지서가 나온 이유, 선택할 수 있는 방법, 권해 드리는 방안을 설명합니다.",
+  ir_s4_t: "해결과 사후 관리",
+  ir_s4_d: "IRS와 사건을 진행하고, 종결될 때까지 진행 상황을 알려 드립니다.",
+  ir_w1: "NAEA 회원이며 IRS 앞에서 납세자를 대리할 자격이 등록된 연방 세무사(EA)가 직접 대리합니다.",
+  ir_w2: "기한이 먼저입니다. 대부분의 통지서에는 회신 기한이 있어 첫날부터 챙깁니다.",
+  ir_w3: "모든 단계를 쉬운 말로 설명해, 무엇이 왜 진행되는지 아실 수 있습니다.",
+  ir_q1: "IRS 편지를 막 받았습니다. 먼저 무엇을 해야 하나요?",
+  ir_a1: "그냥 두지 마세요. 편지에 적힌 회신 기한을 확인하시고, 기한 전에 검토할 수 있도록 보안 포털로 사본을 보내 주세요.",
+  ir_q2: "IRS와 대신 통화해 주실 수 있나요?",
+  ir_a2: "네. Form 2848 위임장에 서명하시면 연방 세무사(EA)로서 대신 IRS와 소통할 수 있습니다.",
+  ir_q3: "가산세를 없앨 수 있나요?",
+  ir_a3: "신고 이력과 가산세가 부과된 이유에 따라 다릅니다. 최초 위반 감면이나 합리적 사유가 적용될 수 있는지 검토합니다.",
+  ir_q4: "풀러튼·애너하임·어바인에 살아도 도움받을 수 있나요?",
+  ir_a4: "네. 대부분의 IRS 업무는 전화, 우편, 보안 포털로 진행되어 사무실 방문이 필요 없습니다.",
+  ir_other: "밀린 세금보고가 있으신가요? 개인 세금보고 보기",
+
+  /* ===== BOOKKEEPING, PAYROLL & SALES TAX (/bookkeeping-payroll-sales-tax) ===== */
+  ac_h1: "브레아 장부 정리·페이롤·세일즈 택스, 소규모 사업체를 위한 어카운팅",
+  ac_intro: "정확한 비즈니스 세금보고는 정리된 장부에서 시작합니다. 월별 장부 정리, 페이롤과 페이롤 택스 신고, 캘리포니아 세일즈 택스 신고를 연방 세무사(EA) 이은상의 검토 아래 한국어와 영어로 진행합니다.",
+  ac_i1: "은행·신용카드 대사를 포함한 월별 장부 정리",
+  ac_i2: "재무제표: 손익계산서(P&L)와 대차대조표",
+  ac_i3: "급여(페이롤) 처리",
+  ac_i4: "페이롤 택스 신고: 연방 Form 941·940, 캘리포니아 EDD 보고",
+  ac_i5: "캘리포니아 세일즈·유즈 택스 신고",
+  ac_i6: "연말 외주 인력 Form 1099 준비",
+  ac_i7: "밀린 달의 장부 정리(Catch-up)",
+  ac_s1_t: "상담",
+  ac_s1_d: "계좌, 직원, 판매 품목 등 사업 운영 방식을 확인합니다.",
+  ac_s2_t: "세팅",
+  ac_s2_d: "TaxDome 보안 포털과 매달 명세서·급여 자료를 주고받는 절차를 만듭니다.",
+  ac_s3_t: "월별 업무",
+  ac_s3_d: "매 기간 장부, 페이롤, 신고를 마치고 리포트를 보내 드립니다.",
+  ac_s4_t: "연말 세금보고",
+  ac_s4_d: "마감된 장부가 그대로 비즈니스 세금보고로 이어집니다.",
+  ac_w2: "장부, 페이롤, 세금보고를 함께 맡아 매달부터 연말까지 숫자가 맞습니다.",
+  ac_q1: "장부가 밀려 있는데 정리해 주실 수 있나요?",
+  ac_a1: "네. 지난 달들을 정리해 세금보고 전에 장부를 최신 상태로 맞춥니다.",
+  ac_q2: "지금 쓰는 페이롤 업체와 같이 일할 수 있나요?",
+  ac_a2: "네. 기존 업체와 조율하거나 페이롤을 직접 맡아 처리할 수 있습니다.",
+  ac_q3: "캘리포니아 세일즈 택스를 신고해야 하나요?",
+  ac_a3: "무엇을 어떻게 판매하는지에 따라 다릅니다. 함께 검토해 해당되는 등록과 신고를 처리합니다.",
+  ac_q4: "사업체가 애너하임이나 어바인에 있어도 되나요?",
+  ac_a4: "네. 월별 업무는 보안 포털로 진행되어 사업체 위치와 관계없이 가능합니다.",
+  ac_other: "비즈니스 세금보고 보기",
+
+  /* practice: links to the service pages */
+  prac_more1: '택스 플래닝 자세히 보기',
+  prac_more2: 'IRS 문제 해결 자세히 보기',
+  prac_more3: '장부·페이롤·세일즈 택스 자세히 보기',
+
+  /* footer: service pages */
   ft_taxprep: '개인 세금보고',
   ft_biztaxprep: '비즈니스 세금보고',
+  ft_taxplan: '택스 플래닝',
+  ft_irshelp: 'IRS 문제 해결',
+  ft_acct: '장부·페이롤·세일즈 택스',
 
   /* placeholders */
   ph_name: '홍길동',
@@ -378,6 +475,18 @@ const KO_META = {
     title: "브레아 비즈니스 세금보고 | LLC·S-Corp·C-Corp 세금신고",
     description: "브레아 비즈니스 세금보고(세금신고). LLC, 파트너십, S-Corp, C-Corp, 비영리단체까지 연방 세무사(EA)가 다단계로 검토합니다. 한국어·영어 상담.",
   },
+  taxplan: {
+    title: "브레아 택스 플래닝 | 절세 설계 · 세무사 이은상(EA)",
+    description: "브레아 택스 플래닝. 직장인·가정·사업주를 위한 연말 절세, 사업 구조(S-Corp), 은퇴 플랜, 세액공제, 부동산까지 연방 세무사(EA)가 설계합니다. 한국어·영어 상담.",
+  },
+  irshelp: {
+    title: "브레아 IRS 문제 해결 | IRS 편지·압류·가산세 · 세무사 이은상",
+    description: "IRS·캘리포니아 세무 통지서를 받으셨나요? 브레아 연방 세무사(EA)가 검토하고 대리합니다. 압류 해제, 가산세 감면, 분할납부, OIC. 한국어·영어 상담.",
+  },
+  acct: {
+    title: "브레아 장부 정리·페이롤·세일즈 택스 | 소규모 사업체 어카운팅",
+    description: "브레아 소규모 사업체를 위한 월별 장부 정리, 페이롤·페이롤 택스 신고, 캘리포니아 세일즈 택스 신고. 비즈니스 세금보고까지 연결합니다. 한국어·영어 상담.",
+  },
 };
 
 /* ---------- Logo (rebuilt from the brand logo: 3×3 mark + wordmark) ---------- */
@@ -397,7 +506,7 @@ function logoHTML(compact) {
       <span class="text-center leading-none">
         <span class="block font-display ${compact ? 'text-xl' : 'text-[26px]'} font-bold tracking-tight text-[#111]">Lee Eunsang</span>
         <span class="mx-auto mt-1.5 block h-px w-10 bg-slate-400"></span>
-        <span class="mt-1.5 block font-mono ${compact ? 'text-[7.5px]' : 'text-[9px]'} font-medium tracking-[0.2em] text-logo-gold">TAX PLANNING &amp; RESOLUTION</span>
+        <span class="mt-1.5 block font-mono ${compact ? 'text-[7.5px]' : 'text-[9px]'} font-medium tracking-[0.2em] text-logo-gold">TAX RETURNS · PLANNING · IRS HELP</span>
       </span>
     </span>`;
 }
@@ -414,6 +523,9 @@ const NAV = [
 const FOOTER_EXTRA = [
   { key: 'ft_taxprep', label: 'Tax Preparation', href: 'tax-preparation' },
   { key: 'ft_biztaxprep', label: 'Business Tax Preparation', href: 'business-tax-preparation' },
+  { key: 'ft_taxplan', label: 'Tax Planning', href: 'tax-planning' },
+  { key: 'ft_irshelp', label: 'IRS Tax Help', href: 'irs-tax-help' },
+  { key: 'ft_acct', label: 'Bookkeeping, Payroll & Sales Tax', href: 'bookkeeping-payroll-sales-tax' },
 ];
 
 /* Same page in the other language: /about <-> /ko/about, / <-> /ko/ */
@@ -436,7 +548,7 @@ function renderHeader(page) {
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-3 h-[72px] sm:h-20">
-        <a href="./" class="shrink-0" aria-label="Lee Eunsang — Tax Planning & Resolution, home">
+        <a href="./" class="shrink-0" aria-label="Lee Eunsang — Tax Returns, Planning & IRS Help, home">
           <span class="hidden sm:block">${logoHTML(false)}</span>
           <span class="sm:hidden">${logoHTML(true)}</span>
         </a>
@@ -476,7 +588,7 @@ function renderFooter() {
           <a href="./" class="inline-block rounded bg-white px-4 py-3" aria-label="Home">${logoHTML(false)}</a>
           <dl class="mt-7 space-y-3 text-sm">
             <div><dt class="font-semibold text-white" data-i18n="ft_firm">Firm</dt><dd>Lee Eunsang Tax LLC</dd></div>
-            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA · Serving Fullerton, Yorba Linda, Placentia, La Habra, Buena Park, Orange County, LA County and nationwide</dd></div>
+            <div><dt class="font-semibold text-white" data-i18n="ft_loc_h">Location</dt><dd data-i18n="ft_loc">Brea, CA · Serving Yorba Linda, Fullerton, Placentia, Buena Park, Anaheim, Irvine, La Habra, Diamond Bar and nationwide</dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_phone_h">Phone</dt><dd><a href="tel:+17144827903" class="text-brass hover:underline">(714) 482-7903</a></dd></div>
             <div><dt class="font-semibold text-white" data-i18n="ft_web">Website</dt><dd><a href="https://www.leeeunsangtax.com/" class="text-brass hover:underline">leeeunsangtax.com</a></dd></div>
           </dl>

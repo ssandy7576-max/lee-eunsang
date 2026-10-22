@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.leeeunsangtax.com/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/practice</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/ko/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/ko/practice</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -42,22 +42,52 @@
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/tax-preparation</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/business-tax-preparation</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/ko/tax-preparation</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.leeeunsangtax.com/ko/business-tax-preparation</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/tax-planning</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/irs-tax-help</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/bookkeeping-payroll-sales-tax</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/ko/tax-planning</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/ko/irs-tax-help</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.leeeunsangtax.com/ko/bookkeeping-payroll-sales-tax</loc>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.9</priority>
   </url>
 </urlset>

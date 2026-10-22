@@ -11,7 +11,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const FILES = ['index.html', 'about.html', 'practice.html', 'contact.html', 'tax-preparation.html', 'business-tax-preparation.html', 'site.js',
+const FILES = ['index.html', 'about.html', 'practice.html', 'contact.html', 'tax-preparation.html', 'business-tax-preparation.html',
+  'tax-planning.html', 'irs-tax-help.html', 'bookkeeping-payroll-sales-tax.html', 'site.js',
   ...fs.readdirSync(path.join(ROOT, 'ko')).filter((f) => f.endsWith('.html')).map((f) => 'ko/' + f)];
 
 // [level, label, pattern, allow?]  allow = phrases that are fine in context

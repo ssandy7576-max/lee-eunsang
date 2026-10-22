@@ -14,7 +14,8 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://www.leeeunsangtax.com';
 const PAGES = { 'index.html': '/', 'about.html': '/about', 'practice.html': '/practice', 'contact.html': '/contact',
-  'tax-preparation.html': '/tax-preparation', 'business-tax-preparation.html': '/business-tax-preparation' };
+  'tax-preparation.html': '/tax-preparation', 'business-tax-preparation.html': '/business-tax-preparation',
+  'tax-planning.html': '/tax-planning', 'irs-tax-help.html': '/irs-tax-help', 'bookkeeping-payroll-sales-tax.html': '/bookkeeping-payroll-sales-tax' };
 
 // Load KO / KO_META from site.js without a browser
 const ctx = { tailwind: {}, document: { addEventListener() {} }, window: {}, navigator: {} };

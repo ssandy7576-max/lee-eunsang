@@ -264,6 +264,7 @@ const KO = {
 
   /* ===== TAX PREPARATION PAGES: shared section headings ===== */
   sec_handle: "준비하는 신고",
+  sec_scope: "업무 범위",
   sec_how: "진행 순서",
   sec_why: "고객이 저희를 선택하는 이유",
   sec_areas: "서비스 지역",

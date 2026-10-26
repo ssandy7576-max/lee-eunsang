@@ -517,7 +517,7 @@ const NAV = [
   { key: 'nav_home', label: 'Home', href: './', page: 'home' },
   { key: 'nav_about', label: 'About Us', href: 'about', page: 'about' },
   { key: 'nav_practice', label: 'Practice', href: 'practice', page: 'practice' },
-  { key: 'nav_blog', label: 'Blog', href: 'blog/', page: 'blog', langs: ['ko'] }, // Korean first; add 'en' when English posts exist
+  { key: 'nav_blog', label: 'Tax News', href: 'blog/', page: 'blog' },
   { key: 'nav_contact', label: 'Contact', href: 'contact', page: 'contact' },
 ];
 const navFor = (lang) => NAV.filter((n) => !n.langs || n.langs.includes(lang));

@@ -42,14 +42,14 @@
 
 ```bash
 node tools/build-ko.mjs     # 영문 HTML 또는 site.js의 한국어를 고친 뒤 반드시 실행 → ko/ 재생성
-node tools/build-blog.mjs   # 블로그 글(content/blog/ko/*.html)을 고친 뒤 실행 → ko/blog/·RSS·sitemap 블로그 구간 재생성
+node tools/build-blog.mjs   # 블로그 글(content/blog/ko|en/*.html)을 고친 뒤 실행 → ko/blog/·blog/·RSS·sitemap 블로그 구간 재생성
 node tools/check-copy.mjs   # 표현 규칙 점검. ERROR가 하나라도 있으면 PR을 만들지 않는다
 ```
 
 ### 블로그 (2026-10-25 개설)
 
-- 원본: `content/blog/<언어>/<slug>.html` (맨 위 JSON 머리말 + 본문). 결과물 `ko/blog/`는 직접 고치지 않는다.
-- 한국어 우선. 영어 글이 생기면 `site.js` NAV의 블로그 항목 `langs`에 'en'을 추가한다.
+- 원본: `content/blog/<언어>/<slug>.html` (맨 위 JSON 머리말 + 본문). 결과물 `ko/blog/`·`blog/`는 직접 고치지 않는다.
+- **모든 글은 한국어(`ko/`)와 영어(`en/`) 두 가지로, 같은 slug·같은 내용으로 올린다** (대표 지시 2026-10-25). IRS·FTB 원문 인용은 두 언어에 똑같이 들어간다. 한쪽만 있으면 빌드가 실패한다. 미발행 초안은 `content/blog/drafts/`.
 - 글 구조(대표 원칙, 10/12): ① IRS·FTB 원문 짧은 인용(변경 금지) + 링크 ② 한국어 사실 요약 ③ "이은상 세무사의 해석" ④ 더 알아보기 링크. 면책·문의 안내는 템플릿이 자동으로 붙인다.
 - 주제는 대표가 고른다. AI는 초안을 PR로 올리고, **merge가 곧 발행**이다. 해석 부분은 반드시 대표의 세무 검수를 거친다.
 

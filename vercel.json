@@ -1,7 +1,8 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/ko", "destination": "/ko/", "permanent": true }
+    { "source": "/ko", "destination": "/ko/", "permanent": true },
+    { "source": "/ko/blog", "destination": "/ko/blog/", "permanent": true }
   ],
   "headers": [
     {

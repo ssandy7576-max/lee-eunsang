@@ -53,6 +53,7 @@ const KO = {
   nav_home: '홈',
   nav_about: '회사 소개',
   nav_practice: '업무 분야',
+  nav_blog: '세무 소식',
   nav_contact: '문의하기',
   nav_portal: '고객 포털',
 
@@ -516,8 +517,10 @@ const NAV = [
   { key: 'nav_home', label: 'Home', href: './', page: 'home' },
   { key: 'nav_about', label: 'About Us', href: 'about', page: 'about' },
   { key: 'nav_practice', label: 'Practice', href: 'practice', page: 'practice' },
+  { key: 'nav_blog', label: 'Blog', href: 'blog/', page: 'blog', langs: ['ko'] }, // Korean first; add 'en' when English posts exist
   { key: 'nav_contact', label: 'Contact', href: 'contact', page: 'contact' },
 ];
+const navFor = (lang) => NAV.filter((n) => !n.langs || n.langs.includes(lang));
 
 /* Extra footer links (not in the main nav) */
 const FOOTER_EXTRA = [
@@ -530,17 +533,21 @@ const FOOTER_EXTRA = [
 
 /* Same page in the other language: /about <-> /ko/about, / <-> /ko/ */
 function langHref(target) {
+  // Pages without a twin in the other language (e.g. Korean-only blog posts) name their fallback
+  const alt = document.body && document.body.dataset[target === 'ko' ? 'altKo' : 'altEn'];
+  if (alt) return alt;
   const path = location.pathname.replace(/^\/ko(?=\/|$)/, '') || '/';
   return (target === 'ko' ? '/ko' + path : path) + location.hash;
 }
 
 function renderHeader(page) {
   const lang = pageLang();
-  const links = NAV.map((n) => {
+  const nav = navFor(lang);
+  const links = nav.map((n) => {
     const active = n.page === page;
     return `<a href="${n.href}" class="nav-link text-[13px] font-semibold uppercase tracking-[0.12em] ${active ? 'text-navy is-active' : 'text-slate-500 hover:text-navy'}" data-i18n="${n.key}"${active ? ' aria-current="page"' : ''}>${n.label}</a>`;
   }).join('');
-  const mobile = NAV.map((n) =>
+  const mobile = nav.map((n) =>
     `<a href="${n.href}" class="border-b border-slate-100 py-3 text-sm font-semibold uppercase tracking-[0.12em] ${n.page === page ? 'text-brass-dark' : 'text-navy'}" data-i18n="${n.key}">${n.label}</a>`
   ).join('');
 
@@ -578,7 +585,7 @@ function renderHeader(page) {
 }
 
 function renderFooter() {
-  const links = NAV.map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('')
+  const links = navFor(pageLang()).map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('')
     + FOOTER_EXTRA.map((n) => `<li><a href="${n.href}" class="hover:text-brass" data-i18n="${n.key}">${n.label}</a></li>`).join('');
   return `
   <footer class="bg-navy-deep text-slate-300">

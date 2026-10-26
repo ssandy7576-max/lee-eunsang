@@ -57,7 +57,10 @@
 - [ ] TaxDome 자동화: 신고 완료·결제 후 구글 리뷰 요청 메시지 자동 발송
 
 ### 블로그 (AI agent 작성)
-- [ ] 블로그 기반: 영어 `/blog/`, 한국어 `/ko/blog/`, 글마다 저자(Eunsang Lee, EA)와 안내 박스
+- [x] 블로그 기반 (10/25, PR blog-launch): 한국어 `/ko/blog/` 먼저, 글마다 저자·면책·문의 안내, BlogPosting 구조화 데이터, og 태그, RSS `/ko/blog/feed.xml`, 사이트맵 자동 반영. 영어 `/blog/`는 영어 글이 생기면 자동 생성
+- [ ] 배포 후: Search Console 사이트맵 재제출·색인 요청, 네이버 서치어드바이저에 RSS(`/ko/blog/feed.xml`) 제출
+- [ ] IndexNow: 새 글 발행 시 네이버·Bing 자동 알림 (키 파일 + 배포 후 알림)
+- [ ] og 공유 이미지(1200×630) 제작 → 지금은 프로필 사진 사용
 - [ ] agent 작업 방식: GitHub 브랜치 + Pull Request → Vercel 미리보기 → 승인 후 게시
 - [ ] GitHub main 보호 설정, agent 전용 최소 권한 토큰
 - [ ] 저장소 비공개 전환 검토 (현재 PUBLIC)

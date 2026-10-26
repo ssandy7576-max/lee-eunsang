@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>이은상 세무사 세무 소식 | LEE EUNSANG TAX</title>
+    <link>https://www.leeeunsangtax.com/ko/blog/</link>
+    <description>IRS와 캘리포니아 주정부 발표 중 꼭 알아야 할 세무 소식을 연방 세무사(EA) 이은상이 한국어로 정리합니다.</description>
+    <language>ko</language>
+    <lastBuildDate>Mon, 26 Oct 2026 16:00:00 GMT</lastBuildDate>
+    <atom:link href="https://www.leeeunsangtax.com/ko/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>입양 세액공제 이월분, IRS가 자동으로 추가 환급합니다</title>
+      <link>https://www.leeeunsangtax.com/ko/blog/adoption-credit-automatic-refund</link>
+      <guid isPermaLink="true">https://www.leeeunsangtax.com/ko/blog/adoption-credit-automatic-refund</guid>
+      <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
+      <category>IRS 발표</category>
+      <description>IRS가 2020~2024년 입양 세액공제 이월분이 있는 납세자에게 2025년도 추가 환급을 자동으로 지급하고 있습니다. 대상, 시기, 통지서 확인 방법을 연방 세무사가 정리했습니다.</description>
+    </item>
+  </channel>
+</rss>

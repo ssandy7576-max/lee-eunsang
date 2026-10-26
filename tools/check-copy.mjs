@@ -13,7 +13,10 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FILES = ['index.html', 'about.html', 'practice.html', 'contact.html', 'tax-preparation.html', 'business-tax-preparation.html',
   'tax-planning.html', 'irs-tax-help.html', 'bookkeeping-payroll-sales-tax.html', 'site.js',
-  ...fs.readdirSync(path.join(ROOT, 'ko')).filter((f) => f.endsWith('.html')).map((f) => 'ko/' + f)];
+  ...fs.readdirSync(path.join(ROOT, 'ko')).filter((f) => f.endsWith('.html')).map((f) => 'ko/' + f),
+  // Blog: generated pages (tools/build-blog.mjs)
+  ...['ko/blog', 'blog'].filter((d) => fs.existsSync(path.join(ROOT, d)))
+    .flatMap((d) => fs.readdirSync(path.join(ROOT, d)).filter((f) => /\.(html|xml)$/.test(f)).map((f) => d + '/' + f))];
 
 // [level, label, pattern, allow?]  allow = phrases that are fine in context
 const RULES = [

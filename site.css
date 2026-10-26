@@ -105,3 +105,23 @@ html[lang="ko"] .hero-slide__title { font-family: 'Noto Serif KR', 'Playfair Dis
 .info-tile__cta { margin-top: 1.25rem; font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .info-tile__cta span[aria-hidden] { display: inline-block; transition: transform .25s ease; }
 .info-tile:hover .info-tile__cta span[aria-hidden] { transform: translateX(4px); }
+
+/* ---------- Blog article body (tools/build-blog.mjs) ---------- */
+.post-body { color: #334155; font-size: 1.0625rem; line-height: 1.85; }
+.post-body > * + * { margin-top: 1.25rem; }
+.post-body h2 { margin-top: 2.75rem; font-size: 1.5rem; font-weight: 700; line-height: 1.35; color: #14233C; }
+html[lang="ko"] .post-body h2 { font-family: 'Noto Serif KR', serif; }
+.post-body h2::after { content: ''; display: block; width: 44px; height: 2px; margin-top: .6rem; background: #B08D57; }
+.post-body h3 { margin-top: 2rem; font-size: 1.15rem; font-weight: 700; color: #14233C; }
+.post-body ul, .post-body ol { padding-left: 1.25rem; }
+.post-body ul { list-style: disc; }
+.post-body ol { list-style: decimal; }
+.post-body li + li { margin-top: .6rem; }
+.post-body li::marker { color: #B08D57; }
+.post-body strong { color: #14233C; }
+.post-body a { color: #8A6A3A; text-decoration: underline; text-underline-offset: 3px; }
+.post-body a:hover { color: #14233C; }
+.post-body .lead { font-size: 1.15rem; color: #1E293B; }
+.post-body blockquote { border-left: 3px solid #B08D57; background: #FAF7F1; padding: 1rem 1.25rem; font-style: italic; color: #1E293B; }
+.post-body blockquote cite { display: block; margin-top: .5rem; font-size: .85rem; font-style: normal; color: #64748B; }
+.post-body .note { border: 1px solid #E2E8F0; background: #F8FAFC; padding: 1rem 1.25rem; font-size: .95rem; }

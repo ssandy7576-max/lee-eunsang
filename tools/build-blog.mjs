@@ -13,6 +13,7 @@
  * Output (do not edit by hand, it is overwritten):
  *   ko/blog/index.html, ko/blog/<slug>.html, ko/blog/feed.xml   (and the same under blog/ for English posts)
  *   sitemap.xml  — the block between <!-- blog:start --> and <!-- blog:end -->
+ *   index.html, ko/index.html — the "latest tax news" block (newest 3 posts, tools/blog-latest.mjs)
  *
  * Every post must exist in BOTH languages with the same slug (content/blog/ko/<slug>.html and
  * content/blog/en/<slug>.html) and the same content, including the same IRS/FTB quote. The build fails otherwise.
@@ -23,6 +24,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { injectLatest } from './blog-latest.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://www.leeeunsangtax.com';
@@ -301,3 +303,11 @@ else fail('sitemap.xml: </urlset> not found');
 fs.writeFileSync(smPath, sm);
 
 if (problems) { console.error(`\n${problems} problem(s).`); process.exit(1); }
+
+// Home pages: refresh the "latest tax news" block (newest posts in each language)
+for (const [file, lang] of [['index.html', 'en'], ['ko/index.html', 'ko']]) {
+  const p = path.join(ROOT, file);
+  const before = fs.readFileSync(p, 'utf8');
+  const after = injectLatest(before, lang);
+  if (after !== before) { fs.writeFileSync(p, after); console.log(`${file}  latest tax news updated`); }
+}

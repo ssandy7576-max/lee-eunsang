@@ -5,8 +5,16 @@
     <link>https://www.leeeunsangtax.com/ko/blog/</link>
     <description>IRS와 캘리포니아 주정부 발표 중 꼭 알아야 할 세무 소식을 연방 세무사(EA) 이은상이 한국어로 정리합니다.</description>
     <language>ko</language>
-    <lastBuildDate>Tue, 10 Nov 2026 16:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 16:00:00 GMT</lastBuildDate>
     <atom:link href="https://www.leeeunsangtax.com/ko/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IRS 세금을 한 번에 못 낼 때: 분할 납부(Payment Plan) 조건과 수수료</title>
+      <link>https://www.leeeunsangtax.com/ko/blog/cant-pay-irs-balance-payment-plan-installment-agreement</link>
+      <guid isPermaLink="true">https://www.leeeunsangtax.com/ko/blog/cant-pay-irs-balance-payment-plan-installment-agreement</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <category>IRS 문제 해결</category>
+      <description>IRS에 낼 세금이 있는데 한 번에 내기 어렵다면 분할 납부(installment agreement)를 신청할 수 있습니다. IRS 안내 기준 신청 조건, 설정 수수료, 이자·가산세, 중단(default) 방지 방법을 연방 세무사가 정리했습니다.</description>
+    </item>
     <item>
       <title>IRS 2027년 물가 조정 발표: 표준공제, 세율 구간, 자녀 세액공제 금액 정리</title>
       <link>https://www.leeeunsangtax.com/ko/blog/tax-year-2027-inflation-adjustments-standard-deduction-brackets</link>

@@ -1,6 +1,6 @@
 # 1065-2026 Organizer (English) - 11-16-26
 
-> Master copy in Tidyflow: saved job `9f8030bb-d9d3-4817-bce6-3df5cbff3d40` · 60 items · finalized 2026-11-16
+> Master copy in Tidyflow: saved job `6d44a14a-f3b9-4738-ab5d-ac7a50b38b21` · 60 items · finalized 2026-11-16
 > Sent to every client unchanged. Any change must be made in Tidyflow and in this file together.
 
 ## Job description (shown to the client)
@@ -113,19 +113,19 @@ Key: ❓ question · 📎 upload · ↳ appears only when the answer shown is se
 ### 6. Other items and final check
 
 - ❓ **Does the company have sales, employees, an office, or inventory in any state other than California?**  
-    _If yes, list the state and details. If not, write 'None'._
-- ❓ **Did the company's foreign accounts total more than $10,000 at any time this year?**  
+    _If yes, list the state. If not, write 'None'._
+- ❓ **At any time this year, did the combined balance of the company's foreign (e.g., Korean) bank or brokerage accounts exceed $10,000?**  
     Options: No / Yes / Not sure
 - ❓ **Foreign account information**  
-    _Only if 'Yes': bank name and address, country, account number, account type, highest balance during the year (in local currency)_
+    _If Yes: for each account, the bank name and address, country, account number, account type, and highest balance during the year (in local currency)_
 - ❓ **LLC fees and estimated payments made to the FTB this year (Form 3522, 3536, etc.)**  
-    _Date and amount. If none, write 'None'._
+    _Date and amount of each payment. If the company is not an LLC or made no payments, write 'None'._
 - 📎 **Letters received from the IRS, FTB, EDD, or CDTFA**  
-    _If none, click 'I don't have this'._
+    _If you didn't receive any letters, click 'I don't have this'._
 - 📎 **Other documents**  
-    _Upload any documents not listed above._
+    _Upload any documents not listed above, or foreign account statements._
 - ❓ **Anything else you'd like us to know**
 - ❓ **Have you completed everything you need to provide?**  
     Options: Yes, everything is complete / No, some items are still missing
 - ❓ **Missing items and reason**  
-    _If some items are still missing, please list them (e.g., still waiting for a 1099-K)._
+    _If some items are still missing: e.g., I haven't received my 1099-K yet_

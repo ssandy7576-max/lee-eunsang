@@ -507,7 +507,7 @@ function logoHTML(compact) {
       <span class="text-center leading-none">
         <span class="block font-display ${compact ? 'text-xl' : 'text-[26px]'} font-bold tracking-tight text-[#111]">Lee Eunsang</span>
         <span class="mx-auto mt-1.5 block h-px w-10 bg-slate-400"></span>
-        <span class="mt-1.5 block font-mono ${compact ? 'text-[7.5px]' : 'text-[9px]'} font-medium tracking-[0.2em] text-logo-gold">TAX RETURNS · PLANNING · IRS HELP</span>
+        <span class="mt-1.5 block font-mono ${compact ? 'text-[7.5px] tracking-[0.1em]' : 'text-[9px] tracking-[0.2em]'} font-medium text-logo-gold">TAX RETURNS · PLANNING · IRS HELP</span>
       </span>
     </span>`;
 }
@@ -555,13 +555,14 @@ function renderHeader(page) {
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between gap-3 h-[72px] sm:h-20">
-        <a href="./" class="shrink-0" aria-label="Lee Eunsang — Tax Returns, Planning & IRS Help, home">
+        <a href="./" class="min-w-0" aria-label="Lee Eunsang — Tax Returns, Planning & IRS Help, home">
           <span class="hidden sm:block">${logoHTML(false)}</span>
           <span class="sm:hidden">${logoHTML(true)}</span>
         </a>
         <nav class="hidden lg:flex items-center gap-9" aria-label="Primary">${links}</nav>
-        <div class="flex items-center gap-2 sm:gap-3">
-          <div class="flex items-center rounded-full border border-slate-300 p-0.5 text-[11px] font-bold" role="group" aria-label="Language">
+        <div class="flex shrink-0 items-center gap-1 sm:gap-3">
+          <a href="${langHref(lang === 'ko' ? 'en' : 'ko')}" hreflang="${lang === 'ko' ? 'en' : 'ko'}" lang="${lang === 'ko' ? 'en' : 'ko'}" class="sm:hidden rounded-full border border-slate-300 px-3 py-1.5 text-[11px] font-bold text-slate-600" aria-label="${lang === 'ko' ? 'English' : '한국어'}">${lang === 'ko' ? 'ENG' : 'KOR'}</a>
+          <div class="hidden sm:flex items-center rounded-full border border-slate-300 p-0.5 text-[11px] font-bold" role="group" aria-label="Language">
             <a href="${langHref('en')}" hreflang="en" lang="en" class="lang-btn px-2.5 sm:px-3 py-1.5 rounded-full text-slate-500 transition"${lang === 'en' ? ' aria-current="true"' : ''}>ENG</a>
             <a href="${langHref('ko')}" hreflang="ko" lang="ko" class="lang-btn px-2.5 sm:px-3 py-1.5 rounded-full text-slate-500 transition"${lang === 'ko' ? ' aria-current="true"' : ''}>KOR</a>
           </div>
@@ -569,7 +570,7 @@ function renderHeader(page) {
             <svg class="w-4 h-4 text-brass" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
             <span data-i18n="nav_portal">Client Portal</span>
           </a>
-          <button type="button" id="menuBtn" class="lg:hidden p-2 text-navy" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <button type="button" id="menuBtn" class="lg:hidden shrink-0 p-2 text-navy" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
         </div>
